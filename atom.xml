@@ -4,7 +4,7 @@
   <title><![CDATA[活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-08T15:04:02+09:00</updated>
+  <updated>2015-10-08T15:08:27+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -111,7 +111,7 @@
 
 <p>私がこの<strong>git-flow</strong>を使用した結果をお見せします。　
 どうぞ
-<img src="https://github.com/YusakuSakamoto/YusakuSakamoto.octopress/blob/master/source/images/2015-10-08-gitk.png" title="gitkのスクショ" alt="gitk" /></p>
+<a href="https://github.com/YusakuSakamoto/YusakuSakamoto.octopress/blob/master/source/images/2015-10-08-gitk.png" title="">gitkのスクショ</a></p>
 
 <h2>5.自己紹介</h2>
 

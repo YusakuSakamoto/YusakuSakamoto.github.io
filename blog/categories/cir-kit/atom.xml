@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cir-kit | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/cir-kit/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-08T14:35:48+09:00</updated>
+  <updated>2015-10-08T15:04:02+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -54,7 +54,11 @@
 
 <h3>haroopadをインストールしましょう</h3>
 
-<p>1.Ubuntu Software centerで、haroopadと検索<br/>
+<p>下のやり方は、<strong>ubuntu14.04LTS</strong>での環境で確認しました。<br/>
+<a href="http://linuxg.net/how-to-install-haroopad-0-12-2-on-ubuntu-debian-and-derivative-systems/">インストール方法</a></p>
+
+<p>下のやり方は、<strong>ubuntu15.04</strong>での環境で確認しました。
+1.Ubuntu Software centerで、haroopadと検索<br/>
 2.install!<br/>
 <img src="http://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Haroopad-icon.png" alt="" /></p>
 
@@ -106,7 +110,8 @@
 <p>これは最近私達の活動に取り入れたことなのですが、正直使いにくいgitを使いやすくしてくれるツールが、<strong>git-flow</strong>と、<strong>github-flow</strong>です。これは私が説明するよりもウェブサイトを見てほしいと思います。</p>
 
 <p>私がこの<strong>git-flow</strong>を使用した結果をお見せします。　
-どうぞ</p>
+どうぞ
+<img src="https://github.com/YusakuSakamoto/YusakuSakamoto.octopress/blob/master/source/images/2015-10-08-gitk.png" title="gitkのスクショ" alt="gitk" /></p>
 
 <h2>5.自己紹介</h2>
 
@@ -171,45 +176,45 @@
 
 
 <p>CIR-KITで学んだもの
-- Ubuntu
-- C
-- C
-- Makefile
-- cmake
-- LRF
-- Serial 通信
-- emacs
-- ROS
-- OpenCV
-- pthread
-- linux system call
-- GTK Window Programing
-- エンコーダの読み方、仕組み
-- Arduino
-- raspberry Pi
-- imcs01
-- OpenMP
-- パターン認識
-- ライントレース
-- ファジー制御
-- git
-- github
-- git-flow
-- github-flow
-- 機械学習
-- 平均値シフト法
-- 確率
-- マネジメント
-- パーティクルフィルタ
-- カルマンフィルタ
-- ガウシアンフィルタ等の画像処理系フィルタ
-- マルコフ連鎖モンテカルロ法
-- TCP/IP・パケット通信
-- ステッピングモータ制御
-- モータ制御
-- 電気回路基礎
-- PID制御
-- CAD(inventor,Design Spark)
+- Ubuntu<br/>
+- C<br/>
+- C<br/>
+- Makefile<br/>
+- cmake<br/>
+- LRF<br/>
+- Serial 通信<br/>
+- emacs<br/>
+- ROS<br/>
+- OpenCV<br/>
+- pthread<br/>
+- linux system call<br/>
+- GTK Window Programing<br/>
+- エンコーダの読み方、仕組み<br/>
+- Arduino<br/>
+- raspberry Pi<br/>
+- imcs01<br/>
+- OpenMP<br/>
+- パターン認識<br/>
+- ライントレース<br/>
+- ファジー制御<br/>
+- git<br/>
+- github<br/>
+- git-flow<br/>
+- github-flow<br/>
+- 機械学習<br/>
+- 平均値シフト法<br/>
+- 確率<br/>
+- マネジメント<br/>
+- パーティクルフィルタ<br/>
+- カルマンフィルタ<br/>
+- ガウシアンフィルタ等の画像処理系フィルタ<br/>
+- マルコフ連鎖モンテカルロ法<br/>
+- TCP/IP・パケット通信<br/>
+- ステッピングモータ制御<br/>
+- モータ制御<br/>
+- 電気回路基礎<br/>
+- PID制御<br/>
+- CAD(inventor,Design Spark)<br/>
 - その他知識、一般教養</p>
 
 <h2>6.今の1号機を動かすには(一緒に考えよう)</h2>

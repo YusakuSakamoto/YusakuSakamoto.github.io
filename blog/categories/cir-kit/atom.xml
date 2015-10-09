@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cir-kit | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/cir-kit/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-09T02:45:45+09:00</updated>
+  <updated>2015-10-09T14:43:05+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[新しい有志のためのガイダンス2]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/09/resume2/"/>
+    <updated>2015-10-09T13:58:08+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/09/resume2</id>
+    <content type="html"><![CDATA[<h1>挨拶と目次</h1>
+
+<p><a href="http://yusakusakamoto.github.io/blog/2015/10/08/resume/">「新しい有志のためのガイダンス」</a>の復習<br/>
+1. keepass2の紹介<br/>
+2. dropboxの紹介<br/>
+3. githubの登録・導入<br/>
+4. gitの解説<br/>
+5. haroopadの導入</p>
+
+<p>反省点<br/>
+1. 思うほど進行が早くなかった。<br/>
+2. 思うほどコンピュータに慣れていなかった。</p>
+
+<p>改善点<br/>
+1. Ubuntuの魅力を説明する<br/>
+2. USB Bootから、HDDへの移行をすすめる<br/>
+3. ROSをどう位置づけるかついての話をCIR-KIT内で議論する<br/>
+4. sudo apt-get update &amp;&amp; sudo apt-get upgrade　をするようにすすめる<br/>
+5. 皆忙しい中ではあったが、もっと早くガイダンスを開くべきだった</p>
+
+<p>善処します</p>
+
+<p>今日の内容は前回に引き続き、<br/>
+今日の内容<br/>
+1. <strong>C++の話</strong><br/>
+2. <strong>Arduinoの話</strong><br/>
+3. <strong>Joystickの話</strong><br/>
+4. 前回の6.今の1号機を動かすには
+の内容を話します。
+よろしくお願いします。</p>
+
+<h1>C++の紹介</h1>
+
+<p><a href="http://www7b.biglobe.ne.jp/~robe/cpphtml/">ロベールのC++</a>のレビューをしますと、これが大変良い良書でして、私が1年生の春休みに購入し、学習を始めた本でした。ぜひご購入くださいませ。</p>
+
+<h1>ArduinoとPCとの通信プログラム</h1>
+
+<p><a href="https://github.com/YusakuSakamoto/arduino">私のgithubからcloneしてください</a>
+<code>
+git clone https://github.com/YusakuSakamoto/arduino
+</code>
+このプログラムは、以下のものが含まれています。<br/>
+- JoyStickとの通信<br/>
+- Arduinoとの通信<br/>
+- GPSとの通信<br/>
+- iMCs01との通信<br/>
+- LRF(UTM-30LXとの通信)</p>
+
+<p>必要なヘッダー等、不要な部分はコメントアウトする必要があります。<br/>
+ご注意ください。</p>
+
+<h1>グループワーク</h1>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[新しい有志のためのガイダンス]]></title>

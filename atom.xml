@@ -4,7 +4,7 @@
   <title><![CDATA[活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-09T02:45:45+09:00</updated>
+  <updated>2015-10-09T14:43:05+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -14,13 +14,76 @@
 
   
   <entry>
+    <title type="html"><![CDATA[新しい有志のためのガイダンス2]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/09/resume2/"/>
+    <updated>2015-10-09T13:58:08+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/09/resume2</id>
+    <content type="html"><![CDATA[<h1>挨拶と目次</h1>
+
+<p><a href="http://yusakusakamoto.github.io/blog/2015/10/08/resume/">「新しい有志のためのガイダンス」</a>の復習<br/>
+1. keepass2の紹介<br/>
+2. dropboxの紹介<br/>
+3. githubの登録・導入<br/>
+4. gitの解説<br/>
+5. haroopadの導入</p>
+
+<p>反省点<br/>
+1. 思うほど進行が早くなかった。<br/>
+2. 思うほどコンピュータに慣れていなかった。</p>
+
+<p>改善点<br/>
+1. Ubuntuの魅力を説明する<br/>
+2. USB Bootから、HDDへの移行をすすめる<br/>
+3. ROSをどう位置づけるかついての話をCIR-KIT内で議論する<br/>
+4. sudo apt-get update &amp;&amp; sudo apt-get upgrade　をするようにすすめる<br/>
+5. 皆忙しい中ではあったが、もっと早くガイダンスを開くべきだった</p>
+
+<p>善処します</p>
+
+<p>今日の内容は前回に引き続き、<br/>
+今日の内容<br/>
+1. <strong>C++の話</strong><br/>
+2. <strong>Arduinoの話</strong><br/>
+3. <strong>Joystickの話</strong><br/>
+4. 前回の6.今の1号機を動かすには
+の内容を話します。
+よろしくお願いします。</p>
+
+<h1>C++の紹介</h1>
+
+<p><a href="http://www7b.biglobe.ne.jp/~robe/cpphtml/">ロベールのC++</a>のレビューをしますと、これが大変良い良書でして、私が1年生の春休みに購入し、学習を始めた本でした。ぜひご購入くださいませ。</p>
+
+<h1>ArduinoとPCとの通信プログラム</h1>
+
+<p><a href="https://github.com/YusakuSakamoto/arduino">私のgithubからcloneしてください</a></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://github.com/YusakuSakamoto/arduino</span></code></pre></td></tr></table></div></figure>
+
+
+<p>このプログラムは、以下のものが含まれています。<br/>
+- JoyStickとの通信<br/>
+- Arduinoとの通信<br/>
+- GPSとの通信<br/>
+- iMCs01との通信<br/>
+- LRF(UTM-30LXとの通信)</p>
+
+<p>必要なヘッダー等、不要な部分はコメントアウトする必要があります。<br/>
+ご注意ください。</p>
+
+<h1>グループワーク</h1>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Passport02]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/09/passport/"/>
     <updated>2015-10-09T00:16:10+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/09/passport</id>
     <content type="html"><![CDATA[<h1>SWOT分析</h1>
 
-<p>Wikiより<br/>
+<p>(Strengths,Weaknesses,Opportunities,Threats)<br/>
+Wikiより<br/>
 <code>
 目標を達成するために意思決定を必要としている組織や個人のプロジェクトやベンチャービジネスなどにおいて、外部環境や内部環境を強み、弱み、機会、脅威の4つのカテゴリーで要因分析し、事業環境変化に対応した経営資源の最適活用を図る経営戦略策定法の一つである。
 </code></p>
@@ -110,11 +173,11 @@
 
 <p>市場全体の一部を構成する特定のニーズを持つ規模の小さい市場のこと。隙間市場ともいい、市場の発見はニッチを開拓するなどという使用方法をする</p>
 
-<h1><a href="http://www.itl-net.com/bsc/bsc7.html">重要成功分析(CSF)</a></h1>
+<h1><a href="http://www.itl-net.com/bsc/bsc7.html">重要成功分析(CSF:Critical Success Factor)</a></h1>
 
-<p>重要成功要因の洗い出し手順
-1. 戦略目標を達成するための要因をできる限り多く洗い出す
-2. 洗いだした要因の中から、最も重要なものを選択する
+<p>重要成功要因の洗い出し手順<br/>
+1. 戦略目標を達成するための要因をできる限り多く洗い出す<br/>
+2. 洗いだした要因の中から、最も重要なものを選択する<br/>
 3. 2.で選択した要因が戦略目標を実現するために因果関係があるかどうかを熟考し、重要成功要因として決定する</p>
 
 <p>全社的なレベルまでまとめられた後に、個人レベルまでブレークダウンされ、具体化される。</p>
@@ -133,6 +196,37 @@
 <h1>マーケティングミックス</h1>
 
 <p><a href="http://viral-community.com/starting-side-business/marketing-mix-4p-4c-4731/">マーケティングミックスの良説</a></p>
+
+<h1>マーケットイン</h1>
+
+<p>コトバンクより
+<code>
+商品の企画開発や生産において、消費者のニーズを重視する方法。製品ありきではなく、顧客ありきの販売戦略。
+</code></p>
+
+<h1>CRM</h1>
+
+<p>(Customer Relationship Management)</p>
+
+<h1>ANSI</h1>
+
+<p>(American National Standards Institute)</p>
+
+<h1>ISO</h1>
+
+<p>(International Organization for Standardization)</p>
+
+<h1>IEEE(アイ・トリプルイー)</h1>
+
+<p>(The Institute of Electrical and Electronics Engineers)</p>
+
+<h1>JIS</h1>
+
+<p>(Japanese Industrial Standards)</p>
+
+<h1>SET</h1>
+
+<p>(Secure Electronic Transaction)</p>
 ]]></content>
   </entry>
   

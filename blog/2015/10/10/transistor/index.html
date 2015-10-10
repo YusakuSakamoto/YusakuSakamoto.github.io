@@ -5,12 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>2015-10-7-first_post - 活動日記</title>
+  <title>Transistor - 活動日記</title>
   <meta name="author" content="Yusaku Sakamoto">
 
   
-  <meta name="description" content="first post
-">
+  <meta name="description" content="トランジスタの役割 トランジスタは、電圧・電流を増幅させる働きを持ちます。携帯電話は、空気中を伝わってくる電波(微弱な電気信号)を増幅して、通信が可能な信号にしているようです。
+Nch MOSFET EKI04047 トランジスタの種類には、以下のものがある
+1. バイポーラ・トランジスタ
+2. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yusakusakamoto.github.io/blog/2015/10/07/first-post/">
+  <link rel="canonical" href="http://yusakusakamoto.github.io/blog/2015/10/10/transistor/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="活動日記" type="application/atom+xml">
@@ -69,7 +71,7 @@
   
   <header>
     
-      <h1 class="entry-title">2015-10-7-first_post</h1>
+      <h1 class="entry-title">Transistor</h1>
     
     
       <p class="meta">
@@ -78,14 +80,62 @@
 
 
 
-<time class='entry-date' datetime='2015-10-07T15:45:08+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:45 pm</span></time>
+<time class='entry-date' datetime='2015-10-10T00:00:26+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>12:00 am</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>first post</p>
+<div class="entry-content"><h1>トランジスタの役割</h1>
+
+<p>トランジスタは、電圧・電流を増幅させる働きを持ちます。携帯電話は、空気中を伝わってくる電波(微弱な電気信号)を増幅して、通信が可能な信号にしているようです。<br/>
+<a href="http://akizukidenshi.com/img/goods/C/I-08423.jpg">Nch MOSFET EKI04047</a></p>
+
+<p>トランジスタの種類には、以下のものがある<br/>
+1. バイポーラ・トランジスタ<br/>
+2. Field Effect Transistor</p>
+
+<h2>バイポーラ・トランジスタ</h2>
+
+<p>バイポーラトランジスタには、以下のものがある<br/>
+1. NPN型トランジスタ<br/>
+2. PNP型トランジスタ<br/>
+バイポーラトランジスタの場合、端子はコレクタ・ベース・エミッタの3種類が存在する。</p>
+
+<h2>バイポーラトランジスタは電流制御に用いられる。</h2>
+
+<p>バイポーラトランジスタの場合、コレクタ・ベース・エミッタ間は電気的につながっている。</p>
+
+<h2>Field Effect Transistor</h2>
+
+<p>Field Effect Transistor(電界効果トランジスタ)には、次の種類がある。<br/>
+1. Nチャネル<br/>
+2. Pチャネル<br/>
+FETの場合、ソース、ドレイン、ゲートの3種類が存在する。</p>
+
+<h2>MOSFETは電圧の制御で用いられる。</h2>
+
+<p>MOSとは、金属酸化膜型のこと。
+MOSFETの場合、ゲート端子が浮いていることになる。</p>
+
+<h2>記号の意味</h2>
+
+<ol>
+<li>Vdss(ドレイン・ソース間電圧[Drain-source voltage])-最大何ボルトまで接続できるか</li>
+<li>ld(ドレイン電流[Gate threshold voltage])-最大何アンペアの電流を流せるか</li>
+<li>Vth(ゲートしきい値電圧[Gate threshold voltage])-負荷をON/OFFさせるときのゲート電圧の境</li>
+<li>Rds(ドレイン・ソース間オン抵抗値[Drain.source ON resistance])オン抵抗値</li>
+</ol>
+
+
+<h2>参考文献</h2>
+
+<ol>
+<li><a href="http://www.geocities.jp/zattouka/GarageHouse/micon/circuit/FET.htm">ＦＥＴをマイコン出力のスイッチとして使う方法</a></li>
+<li><a href="http://miqn.net/periph/63.html">マイコン徹底入門</a></li>
+</ol>
+
 </div>
 
 
@@ -101,15 +151,21 @@
 
 
 
-<time class='entry-date' datetime='2015-10-07T15:45:08+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:45 pm</span></time>
+<time class='entry-date' datetime='2015-10-10T00:00:26+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>12:00 am</span></time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/dian-qi-hui-lu/'>電気回路</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yusakusakamoto.github.io/blog/2015/10/07/first-post/" data-via="" data-counturl="http://yusakusakamoto.github.io/blog/2015/10/07/first-post/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yusakusakamoto.github.io/blog/2015/10/10/transistor/" data-via="" data-counturl="http://yusakusakamoto.github.io/blog/2015/10/10/transistor/" >Tweet</a>
   
   
   
@@ -118,8 +174,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2015/10/09/ubuntu-setup/" title="Previous Post: ubuntu_setup">&laquo; ubuntu_setup</a>
       
-        <a class="basic-alignment right" href="/blog/2015/10/08/resume/" title="Next Post: 新しい有志のためのガイダンス">新しい有志のためのガイダンス &raquo;</a>
       
     </p>
   </footer>

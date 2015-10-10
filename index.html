@@ -9,15 +9,10 @@
   <meta name="author" content="Yusaku Sakamoto">
 
   
-  <meta name="description" content="挨拶と目次 「新しい有志のためのガイダンス」の復習
-1. keepass2の紹介
-2. dropboxの紹介
-3. githubの登録・導入
-4. gitの解説
-5. haroopadの導入 反省点
-1. 思うほど進行が早くなかった。
-2. 思うほどコンピュータに慣れていなかった。 改善点
-1. &hellip;">
+  <meta name="description" content="トランジスタの役割 トランジスタは、電圧・電流を増幅させる働きを持ちます。携帯電話は、空気中を伝わってくる電波(微弱な電気信号)を増幅して、通信が可能な信号にしているようです。
+Nch MOSFET EKI04047 トランジスタの種類には、以下のものがある
+1. バイポーラ・トランジスタ
+2. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,6 +68,135 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/10/10/transistor/">Transistor</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-10-10T00:00:26+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>12:00 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>トランジスタの役割</h1>
+
+<p>トランジスタは、電圧・電流を増幅させる働きを持ちます。携帯電話は、空気中を伝わってくる電波(微弱な電気信号)を増幅して、通信が可能な信号にしているようです。<br/>
+<a href="http://akizukidenshi.com/img/goods/C/I-08423.jpg">Nch MOSFET EKI04047</a></p>
+
+<p>トランジスタの種類には、以下のものがある<br/>
+1. バイポーラ・トランジスタ<br/>
+2. Field Effect Transistor</p>
+
+<h2>バイポーラ・トランジスタ</h2>
+
+<p>バイポーラトランジスタには、以下のものがある<br/>
+1. NPN型トランジスタ<br/>
+2. PNP型トランジスタ<br/>
+バイポーラトランジスタの場合、端子はコレクタ・ベース・エミッタの3種類が存在する。</p>
+
+<h2>バイポーラトランジスタは電流制御に用いられる。</h2>
+
+<p>バイポーラトランジスタの場合、コレクタ・ベース・エミッタ間は電気的につながっている。</p>
+
+<h2>Field Effect Transistor</h2>
+
+<p>Field Effect Transistor(電界効果トランジスタ)には、次の種類がある。<br/>
+1. Nチャネル<br/>
+2. Pチャネル<br/>
+FETの場合、ソース、ドレイン、ゲートの3種類が存在する。</p>
+
+<h2>MOSFETは電圧の制御で用いられる。</h2>
+
+<p>MOSとは、金属酸化膜型のこと。
+MOSFETの場合、ゲート端子が浮いていることになる。</p>
+
+<h2>記号の意味</h2>
+
+<ol>
+<li>Vdss(ドレイン・ソース間電圧[Drain-source voltage])-最大何ボルトまで接続できるか</li>
+<li>ld(ドレイン電流[Gate threshold voltage])-最大何アンペアの電流を流せるか</li>
+<li>Vth(ゲートしきい値電圧[Gate threshold voltage])-負荷をON/OFFさせるときのゲート電圧の境</li>
+<li>Rds(ドレイン・ソース間オン抵抗値[Drain.source ON resistance])オン抵抗値</li>
+</ol>
+
+
+<h2>参考文献</h2>
+
+<ol>
+<li><a href="http://www.geocities.jp/zattouka/GarageHouse/micon/circuit/FET.htm">ＦＥＴをマイコン出力のスイッチとして使う方法</a></li>
+<li><a href="http://miqn.net/periph/63.html">マイコン徹底入門</a></li>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/10/09/ubuntu-setup/">Ubuntu_setup</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-10-09T18:46:34+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>6:46 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>ubuntu setup</h1>
+
+<p>最初にubuntuにインストールするシェルスクリプトです。
+任意の場所にinstall.shの名前で保存します。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>supo sh install.sh</span></code></pre></td></tr></table></div></figure>
+
+
+<p>でインストールを始めてください</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/bash
+</span><span class='line'>
+</span><span class='line'>sudo apt-get -y update
+</span><span class='line'>sudo apt-get -y upgrade
+</span><span class='line'>sudo apt-get -y install emacs vim git gitk gcc g++ gfortran gnuplot terminator build-essential libgtk2.0-dev libjpeg-dev libjasper-dev libopenexr-dev cmake python-dev python-numpy python-tk libtbb-dev libeigen3-dev yasm libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev libqt4-dev libqt4-opengl-dev sphinx-common texlive-latex-extra libv4l-dev libdc1394-22-dev libavcodec-dev libavformat-dev libswscale-dev default-jdk ant libvtk5-qt4-dev ibus-mozc arduino keepass2 nautilus-dropbox texlive libopencv-dev python-opencv cmake gparted inkscape mercurial  automake libtool freeglut3-dev xdotool unetbootin texlive-lang-cjk xdotool</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -149,6 +273,9 @@
 ご注意ください。</p>
 
 <h1>グループワーク</h1>
+
+<p>リーダーが決定しました。
+raspberry pi の使用を勧め、決定しました。</p>
 </div>
   
   
@@ -659,6 +786,14 @@ PS3コントローラーを使っていました。ROSは使っていません�
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/10/10/transistor/">Transistor</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/09/ubuntu-setup/">Ubuntu_setup</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/10/09/resume2/">新しい有志のためのガイダンス2</a>
       </li>
     
@@ -668,10 +803,6 @@ PS3コントローラーを使っていました。ROSは使っていません�
     
       <li class="post">
         <a href="/blog/2015/10/08/resume/">新しい有志のためのガイダンス</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/10/07/first-post/">2015-10-7-first_post</a>
       </li>
     
   </ul>

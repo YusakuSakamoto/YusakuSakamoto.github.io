@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Passport | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/passport/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-13T09:28:53+09:00</updated>
+  <updated>2015-10-15T21:35:22+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Passport03]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/13/passport3/"/>
+    <updated>2015-10-13T15:44:01+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/13/passport3</id>
+    <content type="html"><![CDATA[<h5>SFA(Sales Force Automation)</h5>
+
+<p>情報通信技術(IT)を利用して、営業に関するタスクを自動化・支援しようという考え方のこと。</p>
+
+<h5>BPO(Business Process Outsourcing)</h5>
+
+<p>企業運営上の業務や、ビジネスプロセスを専門企業に受託することを示す。日本では沖縄や北海道にコールセンターなどの業務を委託する例がある</p>
+
+<h5>BPR(Business Process Re-engineering)</h5>
+
+<p>企業活動や業務の流れを分析し、最適化すること。根本的に設計し直すことで、劇的な効率の上昇を図る。</p>
+
+<h5>BPM(Business Process Management)</h5>
+
+<p>最適な業務へと改善を続けていく取り組み。BPMとの違いは、短期的で大規模な改革ではなく、長期的な進化を図る、ということ。</p>
+
+<h5>グループウェア</h5>
+
+<p>グループウェアの持つ主な機能は、以下の通り<br/>
+- 電子メール機能<br/>
+- 電子掲示板機能<br/>
+- ドキュメント共有機能<br/>
+- スケジュール機能<br/>
+- ワークフローシステム機能<br/>
+- 設備予約機能<br/>
+- ファイル共有機能</p>
+
+<p>自分が使っているグループウェア<br/>
+slack,trello,googleカレンダー,gmailなど<br/>
+結構各々独立しています。</p>
+
+<h5>DFD(データフローダイアグラム)</h5>
+
+<p>業務などをデータの流れに注目して視覚的に表現したもの</p>
+
+<h5>ER図(Entity Relationship Modeling)</h5>
+
+<p>対象とする世界を実体と関連の２つで表現したもの。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Passport02]]></title>

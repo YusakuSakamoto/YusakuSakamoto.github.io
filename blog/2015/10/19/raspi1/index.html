@@ -5,19 +5,16 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>新しい有志のためのガイダンス2 - 活動日記</title>
+  <title>Raspi1 - 活動日記</title>
   <meta name="author" content="Yusaku Sakamoto">
 
   
-  <meta name="description" content="挨拶と目次 「新しい有志のためのガイダンス」の復習
-1. keepass2の紹介
-2. dropboxの紹介
-3. githubの登録・導入
-4. gitの解説
-5. haroopadの導入 反省点
-1. 思うほど進行が早くなかった。
-2. 思うほどコンピュータに慣れていなかった。 改善点
-1. &hellip;">
+  <meta name="description" content="Wiring Piの導入方法 raspberry pi 2 model Bにて動作確認済み wiringPi installの手順 1
+2
+3
+git clone https://YusakuSakamoto/raspi ~/GPIO
+cd ~/GPIO
+sh wiringPi.sh &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -26,7 +23,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yusakusakamoto.github.io/blog/2015/10/09/resume2/">
+  <link rel="canonical" href="http://yusakusakamoto.github.io/blog/2015/10/19/raspi1/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="活動日記" type="application/atom+xml">
@@ -76,7 +73,7 @@
   
   <header>
     
-      <h1 class="entry-title">新しい有志のためのガイダンス2</h1>
+      <h1 class="entry-title">Raspi1</h1>
     
     
       <p class="meta">
@@ -85,70 +82,60 @@
 
 
 
-<time class='entry-date' datetime='2015-10-09T13:58:08+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:58 pm</span></time>
+<time class='entry-date' datetime='2015-10-19T08:23:13+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>8:23 am</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h1>挨拶と目次</h1>
+<div class="entry-content"><h1>Wiring Piの導入方法</h1>
 
-<p><a href="http://yusakusakamoto.github.io/blog/2015/10/08/resume/">「新しい有志のためのガイダンス」</a>の復習<br/>
-1. keepass2の紹介<br/>
-2. dropboxの紹介<br/>
-3. githubの登録・導入<br/>
-4. gitの解説<br/>
-5. haroopadの導入</p>
+<p>raspberry pi 2 model Bにて動作確認済み</p>
 
-<p>反省点<br/>
-1. 思うほど進行が早くなかった。<br/>
-2. 思うほどコンピュータに慣れていなかった。</p>
-
-<p>改善点<br/>
-1. Ubuntuの魅力を説明する<br/>
-2. USB Bootから、HDDへの移行をすすめる<br/>
-3. ROSをどう位置づけるかついての話をCIR-KIT内で議論する<br/>
-4. sudo apt-get update &amp;&amp; sudo apt-get upgrade　をするようにすすめる<br/>
-5. 皆忙しい中ではあったが、もっと早くガイダンスを開くべきだった</p>
-
-<p>善処します</p>
-
-<p>今日の内容は前回に引き続き、<br/>
-今日の内容<br/>
-1. <strong>C++の話</strong><br/>
-2. <strong>Arduinoの話</strong><br/>
-3. <strong>Joystickの話</strong><br/>
-4. 前回の6.今の1号機を動かすには
-の内容を話します。
-よろしくお願いします。</p>
-
-<h1>C++の紹介</h1>
-
-<p><a href="http://www7b.biglobe.ne.jp/~robe/cpphtml/">ロベールのC++</a>のレビューをしますと、これが大変良い良書でして、私が1年生の春休みに購入し、学習を始めた本でした。ぜひご購入くださいませ。</p>
-
-<h1>ArduinoとPCとの通信プログラム</h1>
-
-<p><a href="https://github.com/YusakuSakamoto/arduino">私のgithubからcloneしてください</a></p>
+<p>wiringPi installの手順</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://github.com/YusakuSakamoto/arduino</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://YusakuSakamoto/raspi ~/GPIO
+</span><span class='line'>cd ~/GPIO
+</span><span class='line'>sh wiringPi.sh</span></code></pre></td></tr></table></div></figure>
 
 
-<p>このプログラムは、以下のものが含まれています。<br/>
-- JoyStickとの通信<br/>
-- Arduinoとの通信<br/>
-- GPSとの通信<br/>
-- iMCs01との通信<br/>
-- LRF(UTM-30LXとの通信)</p>
+<p>wiringPi.shの中身</p>
 
-<p>必要なヘッダー等、不要な部分はコメントアウトする必要があります。<br/>
-ご注意ください。</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#! /bin/bash
+</span><span class='line'>
+</span><span class='line'>sudo apt-get install git-core
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get upgrade
+</span><span class='line'>
+</span><span class='line'>mkdir -p ${HOME}/lib
+</span><span class='line'>git clone git://git.drogon.net/wiringPi ${HOME}/lib/wiringPi
+</span><span class='line'>cd ${HOME}/lib/wiringPi
+</span><span class='line'>git pull origin master
+</span><span class='line'>./build</span></code></pre></td></tr></table></div></figure>
 
-<h1>グループワーク</h1>
 
-<p>リーダーが決定しました。
-raspberry pi の使用を勧め、決定しました。</p>
+<h1>WiringPiを使用したLチカ</h1>
+
+<p><img src="http://3.bp.blogspot.com/-gmSvHB8OAHo/VRQvYSy5BLI/AAAAAAAABBQ/GHkqcVJEp4Q/s1600/Raspberry%2BPi%2BGPIO%2BPins.png" alt="LED Light" /></p>
+
+<h2>blinkレポジトリのプログラムを実行する</h2>
+
+<p>makeして下さい。デフォルトの状態では、Physical13ピンでの動作をします。</p>
 </div>
 
 
@@ -164,21 +151,15 @@ raspberry pi の使用を勧め、決定しました。</p>
 
 
 
-<time class='entry-date' datetime='2015-10-09T13:58:08+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:58 pm</span></time>
+<time class='entry-date' datetime='2015-10-19T08:23:13+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>8:23 am</span></time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/cir-kit/'>cir-kit</a>
-  
-</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yusakusakamoto.github.io/blog/2015/10/09/resume2/" data-via="" data-counturl="http://yusakusakamoto.github.io/blog/2015/10/09/resume2/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yusakusakamoto.github.io/blog/2015/10/19/raspi1/" data-via="" data-counturl="http://yusakusakamoto.github.io/blog/2015/10/19/raspi1/" >Tweet</a>
   
   
   
@@ -187,10 +168,8 @@ raspberry pi の使用を勧め、決定しました。</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2015/10/09/passport/" title="Previous Post: passport02">&laquo; passport02</a>
+        <a class="basic-alignment left" href="/blog/2015/10/19/passport07/" title="Previous Post: passport07">&laquo; passport07</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2015/10/09/ubuntu-setup/" title="Next Post: ubuntu_setup">ubuntu_setup &raquo;</a>
       
     </p>
   </footer>

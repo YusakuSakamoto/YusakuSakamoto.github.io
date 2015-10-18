@@ -4,7 +4,7 @@
   <title><![CDATA[活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-19T04:26:50+09:00</updated>
+  <updated>2015-10-19T08:24:57+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -12,6 +12,134 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Raspi1]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/19/raspi1/"/>
+    <updated>2015-10-19T08:23:13+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/19/raspi1</id>
+    <content type="html"><![CDATA[<h1>Wiring Piの導入方法</h1>
+
+<p>raspberry pi 2 model Bにて動作確認済み</p>
+
+<p>wiringPi installの手順</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://YusakuSakamoto/raspi ~/GPIO
+</span><span class='line'>cd ~/GPIO
+</span><span class='line'>sh wiringPi.sh</span></code></pre></td></tr></table></div></figure>
+
+
+<p>wiringPi.shの中身</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#! /bin/bash
+</span><span class='line'>
+</span><span class='line'>sudo apt-get install git-core
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get upgrade
+</span><span class='line'>
+</span><span class='line'>mkdir -p ${HOME}/lib
+</span><span class='line'>git clone git://git.drogon.net/wiringPi ${HOME}/lib/wiringPi
+</span><span class='line'>cd ${HOME}/lib/wiringPi
+</span><span class='line'>git pull origin master
+</span><span class='line'>./build</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>WiringPiを使用したLチカ</h1>
+
+<p><img src="http://3.bp.blogspot.com/-gmSvHB8OAHo/VRQvYSy5BLI/AAAAAAAABBQ/GHkqcVJEp4Q/s1600/Raspberry%2BPi%2BGPIO%2BPins.png" alt="LED Light" /></p>
+
+<h2>blinkレポジトリのプログラムを実行する</h2>
+
+<p>makeして下さい。デフォルトの状態では、Physical13ピンでの動作をします。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Passport07]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/19/passport07/"/>
+    <updated>2015-10-19T08:21:33+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/19/passport07</id>
+    <content type="html"><![CDATA[<h4>排他的論理和(XOR)</h4>
+
+<p>真理値表</p>
+
+<table>
+<thead>
+<tr>
+<th> 命題P   </th>
+<th> 命題Q   </th>
+<th> P XOR Q </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>  TRUE  </td>
+<td>  TRUE </td>
+<td>    FALSE    </td>
+</tr>
+<tr>
+<td>  TRUE  </td>
+<td>  FALSE </td>
+<td>    TRUE    </td>
+</tr>
+<tr>
+<td>  FALSE  </td>
+<td>  TRUE </td>
+<td>    TRUE    </td>
+</tr>
+<tr>
+<td>  FALSE  </td>
+<td>  FALSE </td>
+<td>    FALSE    </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>どちらか片方のみが真であれば、その排他的論理和も真であるが、両方が真だと偽になる。<br/>
+<img src="https://upload.wikimedia.org/wikipedia/ja/6/6b/Venn-Diagram-XOR.png" alt="XOR" /></p>
+
+<h4><a href="http://mathtrain.jp/de">ド・モルガンの法則</a></h4>
+
+<h4>アルゴリズムまとめ</h4>
+
+<ul>
+<li>合計(SUM)</li>
+<li>探索(SEARCH)</li>
+<li>逐次探索</li>
+<li>線形探索</li>
+<li>二分探索</li>
+<li>バイナリサーチ</li>
+<li>併合</li>
+<li>整列</li>
+<li>交換法</li>
+<li>バブルソート</li>
+<li>選択法</li>
+<li>挿入法</li>
+<li>クイックソート</li>
+<li>ヒープソート</li>
+<li>シェルソート</li>
+<li>マージソート</li>
+<li>ハッシュ法</li>
+<li>シノニム</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Passport09]]></title>
@@ -74,6 +202,18 @@ DMZ(非武装地帯)とは、組織の内部ネットワークと危険の多い
 <h4>HTTPS</h4>
 
 <p>HTTPSはHTTPに認証機能と暗号化機能を付け加えたものをいう。</p>
+
+<h4>バックアップ</h4>
+
+<ul>
+<li>差分バックアップ
+前回バックアップした状態と現在の状態で差分を取り、保存する</li>
+<li>増分バックアップ
+増分をバックアップしていく</li>
+<li>完全バックアップ
+初回バックアップ</li>
+</ul>
+
 ]]></content>
   </entry>
   

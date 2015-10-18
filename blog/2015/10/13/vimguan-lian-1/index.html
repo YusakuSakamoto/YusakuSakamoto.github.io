@@ -33,7 +33,24 @@ comments: true</p>
 
 <h2>vimshellを入れてみた、という話</h2>
 
-<p>neoboundとかいう管理方法をインストールしてみた結果、結構使いやすかったと言いますか、vim側が勝手に全部やってくれます。素晴らしいです。vimshellだけは少しコンパイルして動作環境に適合させないといけないみたいですが、それ以外は全部自動です。</p>
+<p>neobundleとかいう管理方法をインストールしてみた結果、結構使いやすかったと言いますか、vim側が勝手に全部やってくれます。素晴らしいです。vimshellだけは少しコンパイルして動作環境に適合させないといけないみたいですが、それ以外は全部自動です。</p>
 
-<p>また何か入れたりしたら日記をつけていきます。
-以上。</p>
+<p>.vimrcの設定</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://github.com/YusakuSakamoto/dotfiles ~/dotfiles
+</span><span class='line'>sh ~/dotfiles/link.sh</span></code></pre></td></tr></table></div></figure>
+
+
+<p>neobundleの設定</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir .vim
+</span><span class='line'>mkdir -p ~.vim/bundle
+</span><span class='line'>git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim</span></code></pre></td></tr></table></div></figure>
+
+
+<p>vimを立ち上げると、環境を自動的に入れてくれます。</p>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Passport | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/passport/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-19T02:54:55+09:00</updated>
+  <updated>2015-10-19T04:26:50+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -12,6 +12,70 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Passport09]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/19/passport09/"/>
+    <updated>2015-10-19T03:12:09+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/19/passport09</id>
+    <content type="html"><![CDATA[<h4>ADSL</h4>
+
+<p>非対称ディジタル加入者線（Asymmetric Digital Subscriber Line）のことで、アナログ電話回線を使って、高速通信を実現した方式。数百kから数重Mビット毎秒程度の速度。アシンメトリック(Asymmetric)とは、非対称のことで、ダウンロードは大容量を非常に高速にできるのに対して、アップロードは少量で遅い通信しかできない。</p>
+
+<h4>Dos攻撃</h4>
+
+<p>Dos攻撃(Denial of Service attack:DoS)は、相手のサービスを妨害することを目的に、意味のない大量のデータを送りつけ、通信不能な状態にする攻撃。Denialとは、否定の意味を持つ。</p>
+
+<h4>DDoS</h4>
+
+<p>ゾンビコンピュータを利用した分散型で行う場合は、DDoS攻撃（ディードス攻撃）と呼ばれる。ゾンビコンピュータとは、ウイルス等によって、遠隔操作で悪用できる状態のコンピュータを指す。</p>
+
+<h4>ジフ(Graphics Interchange Format:GIF）</h4>
+
+<p>線画画像などのデータを圧縮して保存するための静止画のデータ形式。256色を扱い、JPEGと共にインターネットで標準的に使用される。</p>
+
+<h4>ADSL modem(モデム：変調復調装置)</h4>
+
+<p>変調・復調を行うことから<strong>mod</strong>ulator <strong>dem</strong>odulatorの頭文字を取って名付けられた。ADSL modemは、ADSLでアナログ通信を行うための専用のモデム。ノイズに弱いので、電話局から離れすぎると通信速度が遅くなる。</p>
+
+<h4>FTP(File Transfer Protocol)</h4>
+
+<p>ファイル転送プロトコルは、安全を考えた設計ではない。通常はTCP/IPのような通信で使用されていたが、現在はSSH FTP(SFTP)という手法で暗号化されたものを使用することがある。</p>
+
+<h4>DBMS(database management system)</h4>
+
+<p>主な機能<br/>
+- データベース言語。例えばSQLなど<br/>
+- 論理的データの独立性<br/>
+- データ完全性<br/>
+- トランザクション処理<br/>
+- セキュリティ<br/>
+- 障害復旧<br/>
+- 最適化<br/>
+- 分散データベース</p>
+
+<h4>DMZ</h4>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Demilitarized_Zone_Diagram.png/220px-Demilitarized_Zone_Diagram.png" alt="DMZ" /><br/>
+DMZ(非武装地帯)とは、組織の内部ネットワークと危険の多い外部ネットワーク（一般的にインターネット）の間に設置されている隔離されたネットワーク領域（サブネットワーク、Subnetwork）のこと。コンピュータセキュリティの一技法として使われる。</p>
+
+<h4>HTTP</h4>
+
+<p>HTTPとは、Webサーバに格納されたHTMLファイルやその他メディアファイルを転送するプロトコル。</p>
+
+<h4>ISMS</h4>
+
+<p>PDCAのルーチンによってセキュリティを継続的に維持・向上させる仕組み。</p>
+
+<h4>IMAP(Internet Message Access Protocol)</h4>
+
+<p>メールの本体がサーバ上で管理される。そのため、ネット回線が接続状態でない場合にはアクセスできない。</p>
+
+<h4>HTTPS</h4>
+
+<p>HTTPSはHTTPに認証機能と暗号化機能を付け加えたものをいう。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Passport03]]></title>

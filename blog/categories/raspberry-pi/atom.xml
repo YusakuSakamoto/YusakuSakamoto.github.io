@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Raspberry_pi | 活動日記]]></title>
+  <link href="http://yusakusakamoto.github.io/blog/categories/raspberry-pi/atom.xml" rel="self"/>
+  <link href="http://yusakusakamoto.github.io/"/>
+  <updated>2015-10-19T08:35:46+09:00</updated>
+  <id>http://yusakusakamoto.github.io/</id>
+  <author>
+    <name><![CDATA[Yusaku Sakamoto]]></name>
+    <email><![CDATA[yskibouyskibou@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Raspi1]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/19/raspi1/"/>
+    <updated>2015-10-19T08:23:13+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/19/raspi1</id>
+    <content type="html"><![CDATA[<h1>Wiring Piの導入方法</h1>
+
+<p>raspberry pi 2 model Bにて動作確認済み<br/>
+wiringPi installの手順<br/>
+<code>
+git clone https://YusakuSakamoto/raspi ~/GPIO
+cd ~/GPIO
+sh wiringPi.sh
+</code></p>
+
+<p>wiringPi.shの中身<br/>
+<code>
+sudo apt-get install git-core
+sudo apt-get update
+sudo apt-get upgrade
+mkdir -p ${HOME}/lib
+git clone git://git.drogon.net/wiringPi ${HOME}/lib/wiringPi
+cd ${HOME}/lib/wiringPi
+git pull origin master
+./build
+</code></p>
+
+<h1>WiringPiを使用したLチカ</h1>
+
+<p><img src="http://3.bp.blogspot.com/-gmSvHB8OAHo/VRQvYSy5BLI/AAAAAAAABBQ/GHkqcVJEp4Q/s1600/Raspberry%2BPi%2BGPIO%2BPins.png" alt="LED Light" /></p>
+
+<h2>blinkレポジトリのプログラムを実行する</h2>
+
+<p>makeして下さい。デフォルトの状態では、Physical13ピンでの動作をします。</p>
+]]></content>
+  </entry>
+  
+</feed>

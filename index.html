@@ -9,7 +9,8 @@
   <meta name="author" content="Yusaku Sakamoto">
 
   
-  <meta name="description" content="Wiring Piの導入方法 raspberry pi 2 model Bにて動作確認済み wiringPi installの手順 1
+  <meta name="description" content="Wiring Piの導入方法 raspberry pi 2 model Bにて動作確認済み
+wiringPi installの手順 1
 2
 3
 git clone https://YusakuSakamoto/raspi ~/GPIO
@@ -94,9 +95,8 @@ sh wiringPi.sh &hellip;">
 
   <div class="entry-content"><h1>Wiring Piの導入方法</h1>
 
-<p>raspberry pi 2 model Bにて動作確認済み</p>
-
-<p>wiringPi installの手順</p>
+<p>raspberry pi 2 model Bにて動作確認済み<br/>
+wiringPi installの手順</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -116,15 +116,9 @@ sh wiringPi.sh &hellip;">
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>#! /bin/bash
-</span><span class='line'>
-</span><span class='line'>sudo apt-get install git-core
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install git-core
 </span><span class='line'>sudo apt-get update
 </span><span class='line'>sudo apt-get upgrade
-</span><span class='line'>
 </span><span class='line'>mkdir -p ${HOME}/lib
 </span><span class='line'>git clone git://git.drogon.net/wiringPi ${HOME}/lib/wiringPi
 </span><span class='line'>cd ${HOME}/lib/wiringPi

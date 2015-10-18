@@ -4,7 +4,7 @@
   <title><![CDATA[活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-19T08:24:57+09:00</updated>
+  <updated>2015-10-19T08:35:46+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -20,9 +20,8 @@
     <id>http://yusakusakamoto.github.io/blog/2015/10/19/raspi1</id>
     <content type="html"><![CDATA[<h1>Wiring Piの導入方法</h1>
 
-<p>raspberry pi 2 model Bにて動作確認済み</p>
-
-<p>wiringPi installの手順</p>
+<p>raspberry pi 2 model Bにて動作確認済み<br/>
+wiringPi installの手順</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -42,15 +41,9 @@
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>#! /bin/bash
-</span><span class='line'>
-</span><span class='line'>sudo apt-get install git-core
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install git-core
 </span><span class='line'>sudo apt-get update
 </span><span class='line'>sudo apt-get upgrade
-</span><span class='line'>
 </span><span class='line'>mkdir -p ${HOME}/lib
 </span><span class='line'>git clone git://git.drogon.net/wiringPi ${HOME}/lib/wiringPi
 </span><span class='line'>cd ${HOME}/lib/wiringPi

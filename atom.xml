@@ -4,7 +4,7 @@
   <title><![CDATA[活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-19T02:51:21+09:00</updated>
+  <updated>2015-10-19T02:54:55+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -60,20 +60,11 @@ slack,trello,googleカレンダー,gmailなど<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Vimguan Lian 1]]></title>
+    <title type="html"><![CDATA[Vim1]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/13/vimguan-lian-1/"/>
-    <updated>2015-10-13T00:00:00+09:00</updated>
+    <updated>2015-10-13T08:04:13+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/13/vimguan-lian-1</id>
-    <content type="html"><![CDATA[<hr />
-
-<p>layout: post
-title: &ldquo;vim関連1&rdquo;
-date: 2015-10-13 08:04:13 +0900
-comments: true</p>
-
-<h2>categories: vim</h2>
-
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Icon-Vim.svg" alt="" /></p>
+    <content type="html"><![CDATA[<p><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Icon-Vim.svg" alt="" /></p>
 
 <h1>vim設定ファイルの.vimrcをemacsで編集するという矛盾</h1>
 
@@ -96,6 +87,8 @@ comments: true</p>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install vim-gtk</span></code></pre></td></tr></table></div></figure>
 
+
+<hr />
 
 <h2>vimshellを入れてみた、という話</h2>
 

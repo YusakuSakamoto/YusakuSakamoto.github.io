@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Half-wave_rectifier_circuit - 活動日記</title>
+  <meta name="author" content="Yusaku Sakamoto">
+
+  
+  <meta name="description" content="用語整理 1. 半波整流回路(以下、参考文献1より) 読み方：はんぱせいりゅうかいろ
+【英】Half-Wave Rectifier Circuit 半波整流回路とは、電流をある正・負どちらかの方向にのみ流れるようにする回路（整流回路）のうち、交流電流において正・ &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yusakusakamoto.github.io/blog/2015/10/20/half-wave-rectifier-circuit/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="活動日記" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">活動日記</a></h1>
+  
+    <h2>気まぐれ日記</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="yusakusakamoto.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Half-wave_rectifier_circuit</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-10-20T15:49:23+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:49 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h1>用語整理</h1>
+
+<h2>1. 半波整流回路(以下、参考文献1より)</h2>
+
+<p>読み方：はんぱせいりゅうかいろ
+【英】Half-Wave Rectifier Circuit</p>
+
+<p>半波整流回路とは、電流をある正・負どちらかの方向にのみ流れるようにする回路（整流回路）のうち、交流電流において正・負の両方の方向に流れている電流のどちらか一方だけを流すことによって整流を行う回路のことである。</p>
+
+<p>半波整流回路は、主にダイオードなどを利用して実現される。ダイオードは整流素子と呼ばれる素子の一つで、電流をアノードからカソードへの方向にしか流さない性質を持っている。そのため、回路中にダイオードを一つ挟むことによって、電流を常に単一の方向にしか流れないようにすることができる。</p>
+
+<p>半波整流回路は、整流素子一個だけで手軽に整流回路が構成できるという利点がある。その反面、電流サイクルの半分を遮断して整流している仕組み上、変換効率が悪いなどの困難がある。このため、半波整流回路はもっぱら簡易的な、負荷や容量の小さい整流器に使用されている。</p>
+
+<p>単純に半波整流回路で整流しただけの電流は、交流電流の波形を残した脈流と呼ばれる状態となっている。このとき、平滑回路やチョークコイルなどを使用することにより、脈流をより直流電流に近づけることができる。</p>
+
+<p>なお、半波整流回路に対して、交流の正・負の両方の電流を同一方向へ流れるようにする（整流する）ことによって電流を変換する回路が、全波整流回路と呼ばれている。全波整流回路の構造は、電気製品のACアダプタなどで一般的に利用されている。</p>
+
+<h2>2. ダイオード</h2>
+
+<p>ダイオードは、n型半導体とp型半導体でできている。ダイオードには、逆電流を流さないという特性を持っているが、一定以上の逆電圧をかければ電流は流れ始める。</p>
+
+<h2>3. マイナス電圧</h2>
+
+<p>電圧とは、相対的なものであるので、必ずしもearthが0Vということではない。実際、交流は正の電圧と府の電圧が交互(alternative)に入れ替わるので、ACと呼称される</p>
+
+<h1>ダイオードで交流電圧を半波整流にしても負電圧を通す理由</h1>
+
+<p>詳しくは参考文献4を参照して下さい。<br/>
+つまり、少数キャリア蓄積効果というものが関係しているらしい。</p>
+
+<h1>参考文献</h1>
+
+<ol>
+<li><a href="http://eleking.net/study/s-accircuit/sac-halfwave.html">IT用語辞典バイナリ</a></li>
+<li><a href="http://eleking.net/study/s-accircuit/sac-halfwave.html">半波整流波形の実効値、平均値、最大値、波形率、波高率の計算方法</a></li>
+<li><a href="http://www.marutsu.co.jp/contents/shop/marutsu/mame/146.html">初歩の測定器活用、入門シリーズ第4回目 オーディオ発振器</a></li>
+<li><a href="http://www.geocities.co.jp/HeartLand-Tachibana/9059/otasuke/diode.htm">ダイオードの特性</a></li>
+</ol>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Yusaku Sakamoto</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-10-20T15:49:23+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:49 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/dian-qi-hui-lu/'>電気回路</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yusakusakamoto.github.io/blog/2015/10/20/half-wave-rectifier-circuit/" data-via="" data-counturl="http://yusakusakamoto.github.io/blog/2015/10/20/half-wave-rectifier-circuit/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/10/20/passport05/" title="Previous Post: passport05">&laquo; passport05</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/10/20/half-wave-rectifier-circuit/">Half-wave_rectifier_circuit</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/20/passport05/">Passport05</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/19/raspi1/">Raspi1</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/19/passport07/">Passport07</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/19/passport09/">Passport09</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Yusaku Sakamoto -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

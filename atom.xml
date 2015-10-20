@@ -4,7 +4,7 @@
   <title><![CDATA[活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-20T09:35:11+09:00</updated>
+  <updated>2015-10-20T17:11:57+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -12,6 +12,75 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Half-wave_rectifier_circuit]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/20/half-wave-rectifier-circuit/"/>
+    <updated>2015-10-20T15:49:23+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/20/half-wave-rectifier-circuit</id>
+    <content type="html"><![CDATA[<h1>用語整理</h1>
+
+<h2>1. 半波整流回路(以下、参考文献1より)</h2>
+
+<p>読み方：はんぱせいりゅうかいろ
+【英】Half-Wave Rectifier Circuit</p>
+
+<p>半波整流回路とは、電流をある正・負どちらかの方向にのみ流れるようにする回路（整流回路）のうち、交流電流において正・負の両方の方向に流れている電流のどちらか一方だけを流すことによって整流を行う回路のことである。</p>
+
+<p>半波整流回路は、主にダイオードなどを利用して実現される。ダイオードは整流素子と呼ばれる素子の一つで、電流をアノードからカソードへの方向にしか流さない性質を持っている。そのため、回路中にダイオードを一つ挟むことによって、電流を常に単一の方向にしか流れないようにすることができる。</p>
+
+<p>半波整流回路は、整流素子一個だけで手軽に整流回路が構成できるという利点がある。その反面、電流サイクルの半分を遮断して整流している仕組み上、変換効率が悪いなどの困難がある。このため、半波整流回路はもっぱら簡易的な、負荷や容量の小さい整流器に使用されている。</p>
+
+<p>単純に半波整流回路で整流しただけの電流は、交流電流の波形を残した脈流と呼ばれる状態となっている。このとき、平滑回路やチョークコイルなどを使用することにより、脈流をより直流電流に近づけることができる。</p>
+
+<p>なお、半波整流回路に対して、交流の正・負の両方の電流を同一方向へ流れるようにする（整流する）ことによって電流を変換する回路が、全波整流回路と呼ばれている。全波整流回路の構造は、電気製品のACアダプタなどで一般的に利用されている。</p>
+
+<h2>2. ダイオード</h2>
+
+<p>ダイオードは、n型半導体とp型半導体でできている。ダイオードには、逆電流を流さないという特性を持っているが、一定以上の逆電圧をかければ電流は流れ始める。</p>
+
+<h2>3. マイナス電圧</h2>
+
+<p>電圧とは、相対的なものであるので、必ずしもearthが0Vということではない。実際、交流は正の電圧と府の電圧が交互(alternative)に入れ替わるので、ACと呼称される</p>
+
+<h1>ダイオードで交流電圧を半波整流にしても負電圧を通す理由</h1>
+
+<p>詳しくは参考文献4を参照して下さい。<br/>
+つまり、少数キャリア蓄積効果というものが関係しているらしい。</p>
+
+<h1>参考文献</h1>
+
+<ol>
+<li><a href="http://eleking.net/study/s-accircuit/sac-halfwave.html">IT用語辞典バイナリ</a></li>
+<li><a href="http://eleking.net/study/s-accircuit/sac-halfwave.html">半波整流波形の実効値、平均値、最大値、波形率、波高率の計算方法</a></li>
+<li><a href="http://www.marutsu.co.jp/contents/shop/marutsu/mame/146.html">初歩の測定器活用、入門シリーズ第4回目 オーディオ発振器</a></li>
+<li><a href="http://www.geocities.co.jp/HeartLand-Tachibana/9059/otasuke/diode.htm">ダイオードの特性</a></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Passport05]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/20/passport05/"/>
+    <updated>2015-10-20T15:29:19+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/20/passport05</id>
+    <content type="html"><![CDATA[<h4>PERT(Program Evaluation and Review Technique)</h4>
+
+<p>partではありません。pertです。
+IT用語辞典から</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>PERTとは、プロジェクトマネジメントの手法の一つで、各工程の依存関係を図示して所要期間を見積もったり、重要な工程を見極めたりする手法。1950年代に米海軍で弾道ミサイル開発プロジェクトのために考案された手法である。
+</span><span class='line'>
+</span><span class='line'>PERTでは各工程を依存関係（前の工程が終わらないと、次の工程が始められない）に従って矢印で繋いでいき、それぞれの工程には所要時間を記入していく。出来上がったネットワーク図（アローダイアグラム、PERT図とも呼ばれる）にはプロジェクト開始から終了まで通常いくつかの経路が現れる。経路をたどって各工程の所要時間を足し合わせていくとその経路の所要時間が求められ、その中で最大のものがプロジェクト全体の工期の見積りとなる。</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Raspi1]]></title>
@@ -58,7 +127,7 @@ wiringPi installの手順</p>
 <h2>blinkレポジトリのプログラムを実行する</h2>
 
 <p>makeして下さい。デフォルトの状態では、Physical13ピンでの動作をします。
-<img src="http://yusakusakamoto.github.io/source/images/20151020_091839.mp4" alt="ltika" /></p>
+<img src="http://yusakusakamoto.github.io/videos/20151020_091839.mp4" alt="ltika" /></p>
 ]]></content>
   </entry>
   

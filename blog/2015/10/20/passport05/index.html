@@ -5,17 +5,15 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Raspi1 - 活動日記</title>
+  <title>Passport05 - 活動日記</title>
   <meta name="author" content="Yusaku Sakamoto">
 
   
-  <meta name="description" content="Wiring Piの導入方法 raspberry pi 2 model Bにて動作確認済み
-wiringPi installの手順 1
+  <meta name="description" content="PERT(Program Evaluation and Review Technique) partではありません。pertです。
+IT用語辞典から 1
 2
 3
-git clone https://YusakuSakamoto/raspi ~/GPIO
-cd ~/GPIO
-sh wiringPi.sh &hellip;">
+PERTとは、プロジェクトマネジメントの手法の一つで、各工程の依存関係を図示して所要期間を見積もったり、重要な工程を見極めたりする手法。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -24,7 +22,7 @@ sh wiringPi.sh &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yusakusakamoto.github.io/blog/2015/10/19/raspi1/">
+  <link rel="canonical" href="http://yusakusakamoto.github.io/blog/2015/10/20/passport05/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="活動日記" type="application/atom+xml">
@@ -74,7 +72,7 @@ sh wiringPi.sh &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Raspi1</h1>
+      <h1 class="entry-title">Passport05</h1>
     
     
       <p class="meta">
@@ -83,54 +81,27 @@ sh wiringPi.sh &hellip;">
 
 
 
-<time class='entry-date' datetime='2015-10-19T08:23:13+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>8:23 am</span></time>
+<time class='entry-date' datetime='2015-10-20T15:29:19+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:29 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h1>Wiring Piの導入方法</h1>
+<div class="entry-content"><h4>PERT(Program Evaluation and Review Technique)</h4>
 
-<p>raspberry pi 2 model Bにて動作確認済み<br/>
-wiringPi installの手順</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://YusakuSakamoto/raspi ~/GPIO
-</span><span class='line'>cd ~/GPIO
-</span><span class='line'>sh wiringPi.sh</span></code></pre></td></tr></table></div></figure>
-
-
-<p>wiringPi.shの中身</p>
+<p>partではありません。pertです。
+IT用語辞典から</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install git-core
-</span><span class='line'>sudo apt-get update
-</span><span class='line'>sudo apt-get upgrade
-</span><span class='line'>mkdir -p ${HOME}/lib
-</span><span class='line'>git clone git://git.drogon.net/wiringPi ${HOME}/lib/wiringPi
-</span><span class='line'>cd ${HOME}/lib/wiringPi
-</span><span class='line'>git pull origin master
-</span><span class='line'>./build</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>PERTとは、プロジェクトマネジメントの手法の一つで、各工程の依存関係を図示して所要期間を見積もったり、重要な工程を見極めたりする手法。1950年代に米海軍で弾道ミサイル開発プロジェクトのために考案された手法である。
+</span><span class='line'>
+</span><span class='line'>PERTでは各工程を依存関係（前の工程が終わらないと、次の工程が始められない）に従って矢印で繋いでいき、それぞれの工程には所要時間を記入していく。出来上がったネットワーク図（アローダイアグラム、PERT図とも呼ばれる）にはプロジェクト開始から終了まで通常いくつかの経路が現れる。経路をたどって各工程の所要時間を足し合わせていくとその経路の所要時間が求められ、その中で最大のものがプロジェクト全体の工期の見積りとなる。</span></code></pre></td></tr></table></div></figure>
 
 
-<h1>WiringPiを使用したLチカ</h1>
 
-<p><img src="http://3.bp.blogspot.com/-gmSvHB8OAHo/VRQvYSy5BLI/AAAAAAAABBQ/GHkqcVJEp4Q/s1600/Raspberry%2BPi%2BGPIO%2BPins.png" alt="LED Light" /></p>
-
-<h2>blinkレポジトリのプログラムを実行する</h2>
-
-<p>makeして下さい。デフォルトの状態では、Physical13ピンでの動作をします。
-<img src="/videos/20151020_091839.mp4" alt="ltika" /></p>
 </div>
 
 
@@ -146,12 +117,12 @@ wiringPi installの手順</p>
 
 
 
-<time class='entry-date' datetime='2015-10-19T08:23:13+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>8:23 am</span></time>
+<time class='entry-date' datetime='2015-10-20T15:29:19+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:29 pm</span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/raspberry-pi/'>raspberry_pi</a>
+    <a class='category' href='/blog/categories/passport/'>passport</a>
   
 </span>
 
@@ -160,7 +131,7 @@ wiringPi installの手順</p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yusakusakamoto.github.io/blog/2015/10/19/raspi1/" data-via="" data-counturl="http://yusakusakamoto.github.io/blog/2015/10/19/raspi1/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yusakusakamoto.github.io/blog/2015/10/20/passport05/" data-via="" data-counturl="http://yusakusakamoto.github.io/blog/2015/10/20/passport05/" >Tweet</a>
   
   
   
@@ -169,10 +140,10 @@ wiringPi installの手順</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2015/10/19/passport07/" title="Previous Post: passport07">&laquo; passport07</a>
+        <a class="basic-alignment left" href="/blog/2015/10/19/raspi1/" title="Previous Post: raspi1">&laquo; raspi1</a>
       
       
-        <a class="basic-alignment right" href="/blog/2015/10/20/passport05/" title="Next Post: passport05">passport05 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2015/10/20/half-wave-rectifier-circuit/" title="Next Post: half-wave_rectifier_circuit">half-wave_rectifier_circuit &raquo;</a>
       
     </p>
   </footer>

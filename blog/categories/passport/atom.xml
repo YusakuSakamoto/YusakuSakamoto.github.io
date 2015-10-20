@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Passport | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/passport/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-20T09:35:11+09:00</updated>
+  <updated>2015-10-20T17:11:57+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Passport05]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/20/passport05/"/>
+    <updated>2015-10-20T15:29:19+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/20/passport05</id>
+    <content type="html"><![CDATA[<h4>PERT(Program Evaluation and Review Technique)</h4>
+
+<p>partではありません。pertです。
+IT用語辞典から
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>PERTとは、プロジェクトマネジメントの手法の一つで、各工程の依存関係を図示して所要期間を見積もったり、重要な工程を見極めたりする手法。1950年代に米海軍で弾道ミサイル開発プロジェクトのために考案された手法である。&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;PERTでは各工程を依存関係（前の工程が終わらないと、次の工程が始められない）に従って矢印で繋いでいき、それぞれの工程には所要時間を記入していく。出来上がったネットワーク図（アローダイアグラム、PERT図とも呼ばれる）にはプロジェクト開始から終了まで通常いくつかの経路が現れる。経路をたどって各工程の所要時間を足し合わせていくとその経路の所要時間が求められ、その中で最大のものがプロジェクト全体の工期の見積りとなる。</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Passport07]]></title>

@@ -4,7 +4,7 @@
   <title><![CDATA[活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-20T18:44:06+09:00</updated>
+  <updated>2015-10-21T16:13:07+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -187,9 +187,8 @@ wiringPi installの手順</p>
 
 <h2>blinkレポジトリのプログラムを実行する</h2>
 
-<p>makeして下さい。デフォルトの状態では、Physical13ピンでの動作をします。</p>
-
-<p><video width='640' height='320' preload='metadata' controls ><source src='http://yusakusakamoto.github.io/images/20151020_091839.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
+<p>makeして下さい。デフォルトの状態では、Physical13ピンでの動作をします。
+<img src="http://yusakusakamoto.github.io/videos/20151020_091839.mp4" alt="ltika" /></p>
 ]]></content>
   </entry>
   
@@ -198,7 +197,81 @@ wiringPi installの手順</p>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/19/passport07/"/>
     <updated>2015-10-19T08:21:33+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/19/passport07</id>
-    <content type="html"><![CDATA[<h4>排他的論理和(XOR)</h4>
+    <content type="html"><![CDATA[<h4>論理和</h4>
+
+<p>真理値表</p>
+
+<table>
+<thead>
+<tr>
+<th> 命題P   </th>
+<th> 命題Q   </th>
+<th> P ∨ Q </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>  TRUE  </td>
+<td>  TRUE </td>
+<td>    TRUE    </td>
+</tr>
+<tr>
+<td>  TRUE  </td>
+<td>  FALSE </td>
+<td>    TRUE    </td>
+</tr>
+<tr>
+<td>  FALSE  </td>
+<td>  TRUE </td>
+<td>    TRUE    </td>
+</tr>
+<tr>
+<td>  FALSE  </td>
+<td>  FALSE </td>
+<td>    FALSE    </td>
+</tr>
+</tbody>
+</table>
+
+
+<h4>論理積( AND )</h4>
+
+<p>真理値表</p>
+
+<table>
+<thead>
+<tr>
+<th> 命題P   </th>
+<th> 命題Q   </th>
+<th> P AND Q  </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>  TRUE  </td>
+<td>  TRUE   </td>
+<td>  TRUE     </td>
+</tr>
+<tr>
+<td>  TRUE  </td>
+<td>  FALSE  </td>
+<td>  FALSE    </td>
+</tr>
+<tr>
+<td>  FALSE  </td>
+<td>  TRUE  </td>
+<td>  FALSE    </td>
+</tr>
+<tr>
+<td>  FALSE  </td>
+<td>  FALSE </td>
+<td>  FALSE    </td>
+</tr>
+</tbody>
+</table>
+
+
+<h4>排他的論理和(XOR)</h4>
 
 <p>真理値表</p>
 
@@ -263,6 +336,25 @@ wiringPi installの手順</p>
 <li>シノニム</li>
 </ul>
 
+
+<h3>言語プロセッサ</h3>
+
+<p>言語プロセッサとは、プログラミング言語などの人工言語で記述されたプログラムなどを処理・解釈し、別の言語やデータ構造による表現に変換するソフトウェアの総称。ここでは、次の３種の言葉が登場する。
+1. アセンブラ
+2. コンパイラ
+3. インタプリタ</p>
+
+<h4>アセンブラ</h4>
+
+<p>アセンブリ言語は機械言と1対1で対応し、プロセッサに依存している。移植性が低いため、過去は処理が早くC言語などが敬遠されてきたが、今では処理能力の向上によって、C言語などが急速に広がった。</p>
+
+<h4>コンパイラ</h4>
+
+<p>処理速度が早い。長期的な使用に向く。</p>
+
+<h4>インタプリタ</h4>
+
+<p>処理速度が遅いが、プログラムが簡単に見れるし、簡単に実行できるので、小規模で実験的なプログラムに向いている・</p>
 ]]></content>
   </entry>
   

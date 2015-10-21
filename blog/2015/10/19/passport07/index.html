@@ -9,7 +9,7 @@
   <meta name="author" content="Yusaku Sakamoto">
 
   
-  <meta name="description" content="排他的論理和(XOR) 真理値表 命題P 命題Q P XOR Q TRUE TRUE FALSE TRUE FALSE TRUE FALSE TRUE TRUE FALSE FALSE FALSE どちらか片方のみが真であれば、その排他的論理和も真であるが、両方が真だと偽になる。 ド・ &hellip;">
+  <meta name="description" content="論理和 真理値表 命題P 命題Q P ∨ Q TRUE TRUE TRUE TRUE FALSE TRUE FALSE TRUE TRUE FALSE FALSE FALSE 論理積( AND ) 真理値表 命題P 命題Q P AND Q TRUE TRUE TRUE TRUE FALSE &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -84,7 +84,81 @@
   </header>
 
 
-<div class="entry-content"><h4>排他的論理和(XOR)</h4>
+<div class="entry-content"><h4>論理和</h4>
+
+<p>真理値表</p>
+
+<table>
+<thead>
+<tr>
+<th> 命題P   </th>
+<th> 命題Q   </th>
+<th> P ∨ Q </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>  TRUE  </td>
+<td>  TRUE </td>
+<td>    TRUE    </td>
+</tr>
+<tr>
+<td>  TRUE  </td>
+<td>  FALSE </td>
+<td>    TRUE    </td>
+</tr>
+<tr>
+<td>  FALSE  </td>
+<td>  TRUE </td>
+<td>    TRUE    </td>
+</tr>
+<tr>
+<td>  FALSE  </td>
+<td>  FALSE </td>
+<td>    FALSE    </td>
+</tr>
+</tbody>
+</table>
+
+
+<h4>論理積( AND )</h4>
+
+<p>真理値表</p>
+
+<table>
+<thead>
+<tr>
+<th> 命題P   </th>
+<th> 命題Q   </th>
+<th> P AND Q  </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>  TRUE  </td>
+<td>  TRUE   </td>
+<td>  TRUE     </td>
+</tr>
+<tr>
+<td>  TRUE  </td>
+<td>  FALSE  </td>
+<td>  FALSE    </td>
+</tr>
+<tr>
+<td>  FALSE  </td>
+<td>  TRUE  </td>
+<td>  FALSE    </td>
+</tr>
+<tr>
+<td>  FALSE  </td>
+<td>  FALSE </td>
+<td>  FALSE    </td>
+</tr>
+</tbody>
+</table>
+
+
+<h4>排他的論理和(XOR)</h4>
 
 <p>真理値表</p>
 
@@ -149,6 +223,25 @@
 <li>シノニム</li>
 </ul>
 
+
+<h3>言語プロセッサ</h3>
+
+<p>言語プロセッサとは、プログラミング言語などの人工言語で記述されたプログラムなどを処理・解釈し、別の言語やデータ構造による表現に変換するソフトウェアの総称。ここでは、次の３種の言葉が登場する。
+1. アセンブラ
+2. コンパイラ
+3. インタプリタ</p>
+
+<h4>アセンブラ</h4>
+
+<p>アセンブリ言語は機械言と1対1で対応し、プロセッサに依存している。移植性が低いため、過去は処理が早くC言語などが敬遠されてきたが、今では処理能力の向上によって、C言語などが急速に広がった。</p>
+
+<h4>コンパイラ</h4>
+
+<p>処理速度が早い。長期的な使用に向く。</p>
+
+<h4>インタプリタ</h4>
+
+<p>処理速度が遅いが、プログラムが簡単に見れるし、簡単に実行できるので、小規模で実験的なプログラムに向いている・</p>
 </div>
 
 

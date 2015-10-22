@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yusakusakamoto.github.io/blog/2015/10/23/tmux-momo/</loc>
+    <lastmod>2015-10-23T07:05:20+09:00</lastmod>
+  </url>
+  <url>
     <loc>http://yusakusakamoto.github.io/blog/2015/10/20/half-wave-rectifier-circuit/</loc>
     <lastmod>2015-10-20T15:49:23+09:00</lastmod>
   </url>

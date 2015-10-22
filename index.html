@@ -9,8 +9,15 @@
   <meta name="author" content="Yusaku Sakamoto">
 
   
-  <meta name="description" content="用語整理 1. 半波整流回路(以下、参考文献1より) 読み方：はんぱせいりゅうかいろ
-【英】Half-Wave Rectifier Circuit 半波整流回路とは、電流をある正・負どちらかの方向にのみ流れるようにする回路（整流回路）のうち、交流電流において正・ &hellip;">
+  <meta name="description" content="install 以下の環境で動作確認済みです。
+- raspberry Pi
+- ubuntu15.04
+- ubuntu14.04LTS 1
+2
+3
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +73,73 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/10/23/tmux-momo/">Tmux_memo</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-10-23T07:05:20+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>7:05 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>install</h1>
+
+<p>以下の環境で動作確認済みです。
+- raspberry Pi
+- ubuntu15.04
+- ubuntu14.04LTS</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get -y update
+</span><span class='line'>sudo apt-get -y upgrade
+</span><span class='line'>sudo apt-get -y install tmux</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>memo</h1>
+
+<h3>ウィンドウ移動</h3>
+
+<p>ctrl-b o</p>
+
+<h3>水平分割</h3>
+
+<p>ctrl-b "</p>
+
+<h3>垂直分割</h3>
+
+<p>ctrl-b %</p>
+
+<h3>分割解除</h3>
+
+<p>ctrl-b x</p>
+
+<p>元ネタ
+<a href="http://kanjuku-tomato.blogspot.jp/2014/02/tmux.html">完熟トマト</a></p>
+
+<h1>感想</h1>
+
+<p>ctrl-bが辛い。その他良好。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -297,8 +371,9 @@ wiringPi installの手順</p>
 
 <h2>blinkレポジトリのプログラムを実行する</h2>
 
-<p>makeして下さい。デフォルトの状態では、Physical13ピンでの動作をします。
-<img src="/videos/20151020_091839.mp4" alt="ltika" /></p>
+<p>makeして下さい。デフォルトの状態では、Physical13ピンでの動作をします。</p>
+
+<p><video width='640' height='320' preload='metadata' controls ><source src='/images/20151020_091839.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
 </div>
   
   
@@ -327,81 +402,7 @@ wiringPi installの手順</p>
   </header>
 
 
-  <div class="entry-content"><h4>論理和</h4>
-
-<p>真理値表</p>
-
-<table>
-<thead>
-<tr>
-<th> 命題P   </th>
-<th> 命題Q   </th>
-<th> P ∨ Q </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>  TRUE  </td>
-<td>  TRUE </td>
-<td>    TRUE    </td>
-</tr>
-<tr>
-<td>  TRUE  </td>
-<td>  FALSE </td>
-<td>    TRUE    </td>
-</tr>
-<tr>
-<td>  FALSE  </td>
-<td>  TRUE </td>
-<td>    TRUE    </td>
-</tr>
-<tr>
-<td>  FALSE  </td>
-<td>  FALSE </td>
-<td>    FALSE    </td>
-</tr>
-</tbody>
-</table>
-
-
-<h4>論理積( AND )</h4>
-
-<p>真理値表</p>
-
-<table>
-<thead>
-<tr>
-<th> 命題P   </th>
-<th> 命題Q   </th>
-<th> P AND Q  </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>  TRUE  </td>
-<td>  TRUE   </td>
-<td>  TRUE     </td>
-</tr>
-<tr>
-<td>  TRUE  </td>
-<td>  FALSE  </td>
-<td>  FALSE    </td>
-</tr>
-<tr>
-<td>  FALSE  </td>
-<td>  TRUE  </td>
-<td>  FALSE    </td>
-</tr>
-<tr>
-<td>  FALSE  </td>
-<td>  FALSE </td>
-<td>  FALSE    </td>
-</tr>
-</tbody>
-</table>
-
-
-<h4>排他的論理和(XOR)</h4>
+  <div class="entry-content"><h4>排他的論理和(XOR)</h4>
 
 <p>真理値表</p>
 
@@ -466,25 +467,6 @@ wiringPi installの手順</p>
 <li>シノニム</li>
 </ul>
 
-
-<h3>言語プロセッサ</h3>
-
-<p>言語プロセッサとは、プログラミング言語などの人工言語で記述されたプログラムなどを処理・解釈し、別の言語やデータ構造による表現に変換するソフトウェアの総称。ここでは、次の３種の言葉が登場する。
-1. アセンブラ
-2. コンパイラ
-3. インタプリタ</p>
-
-<h4>アセンブラ</h4>
-
-<p>アセンブリ言語は機械言と1対1で対応し、プロセッサに依存している。移植性が低いため、過去は処理が早くC言語などが敬遠されてきたが、今では処理能力の向上によって、C言語などが急速に広がった。</p>
-
-<h4>コンパイラ</h4>
-
-<p>処理速度が早い。長期的な使用に向く。</p>
-
-<h4>インタプリタ</h4>
-
-<p>処理速度が遅いが、プログラムが簡単に見れるし、簡単に実行できるので、小規模で実験的なプログラムに向いている・</p>
 </div>
   
   
@@ -865,91 +847,6 @@ MOSFETの場合、ゲート端子が浮いていることになる。</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/10/09/resume2/">新しい有志のためのガイダンス2</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-10-09T13:58:08+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:58 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>挨拶と目次</h1>
-
-<p><a href="http://yusakusakamoto.github.io/blog/2015/10/08/resume/">「新しい有志のためのガイダンス」</a>の復習<br/>
-1. keepass2の紹介<br/>
-2. dropboxの紹介<br/>
-3. githubの登録・導入<br/>
-4. gitの解説<br/>
-5. haroopadの導入</p>
-
-<p>反省点<br/>
-1. 思うほど進行が早くなかった。<br/>
-2. 思うほどコンピュータに慣れていなかった。</p>
-
-<p>改善点<br/>
-1. Ubuntuの魅力を説明する<br/>
-2. USB Bootから、HDDへの移行をすすめる<br/>
-3. ROSをどう位置づけるかついての話をCIR-KIT内で議論する<br/>
-4. sudo apt-get update &amp;&amp; sudo apt-get upgrade　をするようにすすめる<br/>
-5. 皆忙しい中ではあったが、もっと早くガイダンスを開くべきだった</p>
-
-<p>善処します</p>
-
-<p>今日の内容は前回に引き続き、<br/>
-今日の内容<br/>
-1. <strong>C++の話</strong><br/>
-2. <strong>Arduinoの話</strong><br/>
-3. <strong>Joystickの話</strong><br/>
-4. 前回の6.今の1号機を動かすには
-の内容を話します。
-よろしくお願いします。</p>
-
-<h1>C++の紹介</h1>
-
-<p><a href="http://www7b.biglobe.ne.jp/~robe/cpphtml/">ロベールのC++</a>のレビューをしますと、これが大変良い良書でして、私が1年生の春休みに購入し、学習を始めた本でした。ぜひご購入くださいませ。</p>
-
-<h1>ArduinoとPCとの通信プログラム</h1>
-
-<p><a href="https://github.com/YusakuSakamoto/arduino">私のgithubからcloneしてください</a></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://github.com/YusakuSakamoto/arduino</span></code></pre></td></tr></table></div></figure>
-
-
-<p>このプログラムは、以下のものが含まれています。<br/>
-- JoyStickとの通信<br/>
-- Arduinoとの通信<br/>
-- GPSとの通信<br/>
-- iMCs01との通信<br/>
-- LRF(UTM-30LXとの通信)</p>
-
-<p>必要なヘッダー等、不要な部分はコメントアウトする必要があります。<br/>
-ご注意ください。</p>
-
-<h1>グループワーク</h1>
-
-<p>リーダーが決定しました。
-raspberry pi の使用を勧め、決定しました。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -965,6 +862,10 @@ raspberry pi の使用を勧め、決定しました。</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/10/23/tmux-momo/">Tmux_memo</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/10/20/half-wave-rectifier-circuit/">半波整流</a>
       </li>
     
@@ -978,10 +879,6 @@ raspberry pi の使用を勧め、決定しました。</p>
     
       <li class="post">
         <a href="/blog/2015/10/19/passport07/">Passport07</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/10/19/passport09/">Passport09</a>
       </li>
     
   </ul>

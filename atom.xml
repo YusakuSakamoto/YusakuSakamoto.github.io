@@ -4,7 +4,7 @@
   <title><![CDATA[活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-21T16:13:07+09:00</updated>
+  <updated>2015-10-23T07:23:44+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -12,6 +12,53 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Tmux_memo]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/23/tmux-momo/"/>
+    <updated>2015-10-23T07:05:20+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/23/tmux-momo</id>
+    <content type="html"><![CDATA[<h1>install</h1>
+
+<p>以下の環境で動作確認済みです。
+- raspberry Pi
+- ubuntu15.04
+- ubuntu14.04LTS</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get -y update
+</span><span class='line'>sudo apt-get -y upgrade
+</span><span class='line'>sudo apt-get -y install tmux</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>memo</h1>
+
+<h3>ウィンドウ移動</h3>
+
+<p>ctrl-b o</p>
+
+<h3>水平分割</h3>
+
+<p>ctrl-b "</p>
+
+<h3>垂直分割</h3>
+
+<p>ctrl-b %</p>
+
+<h3>分割解除</h3>
+
+<p>ctrl-b x</p>
+
+<p>元ネタ
+<a href="http://kanjuku-tomato.blogspot.jp/2014/02/tmux.html">完熟トマト</a></p>
+
+<h1>感想</h1>
+
+<p>ctrl-bが辛い。その他良好。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[半波整流]]></title>
@@ -187,8 +234,9 @@ wiringPi installの手順</p>
 
 <h2>blinkレポジトリのプログラムを実行する</h2>
 
-<p>makeして下さい。デフォルトの状態では、Physical13ピンでの動作をします。
-<img src="http://yusakusakamoto.github.io/videos/20151020_091839.mp4" alt="ltika" /></p>
+<p>makeして下さい。デフォルトの状態では、Physical13ピンでの動作をします。</p>
+
+<p><video width='640' height='320' preload='metadata' controls ><source src='http://yusakusakamoto.github.io/images/20151020_091839.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
 ]]></content>
   </entry>
   
@@ -197,81 +245,7 @@ wiringPi installの手順</p>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/19/passport07/"/>
     <updated>2015-10-19T08:21:33+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/19/passport07</id>
-    <content type="html"><![CDATA[<h4>論理和</h4>
-
-<p>真理値表</p>
-
-<table>
-<thead>
-<tr>
-<th> 命題P   </th>
-<th> 命題Q   </th>
-<th> P ∨ Q </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>  TRUE  </td>
-<td>  TRUE </td>
-<td>    TRUE    </td>
-</tr>
-<tr>
-<td>  TRUE  </td>
-<td>  FALSE </td>
-<td>    TRUE    </td>
-</tr>
-<tr>
-<td>  FALSE  </td>
-<td>  TRUE </td>
-<td>    TRUE    </td>
-</tr>
-<tr>
-<td>  FALSE  </td>
-<td>  FALSE </td>
-<td>    FALSE    </td>
-</tr>
-</tbody>
-</table>
-
-
-<h4>論理積( AND )</h4>
-
-<p>真理値表</p>
-
-<table>
-<thead>
-<tr>
-<th> 命題P   </th>
-<th> 命題Q   </th>
-<th> P AND Q  </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>  TRUE  </td>
-<td>  TRUE   </td>
-<td>  TRUE     </td>
-</tr>
-<tr>
-<td>  TRUE  </td>
-<td>  FALSE  </td>
-<td>  FALSE    </td>
-</tr>
-<tr>
-<td>  FALSE  </td>
-<td>  TRUE  </td>
-<td>  FALSE    </td>
-</tr>
-<tr>
-<td>  FALSE  </td>
-<td>  FALSE </td>
-<td>  FALSE    </td>
-</tr>
-</tbody>
-</table>
-
-
-<h4>排他的論理和(XOR)</h4>
+    <content type="html"><![CDATA[<h4>排他的論理和(XOR)</h4>
 
 <p>真理値表</p>
 
@@ -336,25 +310,6 @@ wiringPi installの手順</p>
 <li>シノニム</li>
 </ul>
 
-
-<h3>言語プロセッサ</h3>
-
-<p>言語プロセッサとは、プログラミング言語などの人工言語で記述されたプログラムなどを処理・解釈し、別の言語やデータ構造による表現に変換するソフトウェアの総称。ここでは、次の３種の言葉が登場する。
-1. アセンブラ
-2. コンパイラ
-3. インタプリタ</p>
-
-<h4>アセンブラ</h4>
-
-<p>アセンブリ言語は機械言と1対1で対応し、プロセッサに依存している。移植性が低いため、過去は処理が早くC言語などが敬遠されてきたが、今では処理能力の向上によって、C言語などが急速に広がった。</p>
-
-<h4>コンパイラ</h4>
-
-<p>処理速度が早い。長期的な使用に向く。</p>
-
-<h4>インタプリタ</h4>
-
-<p>処理速度が遅いが、プログラムが簡単に見れるし、簡単に実行できるので、小規模で実験的なプログラムに向いている・</p>
 ]]></content>
   </entry>
   

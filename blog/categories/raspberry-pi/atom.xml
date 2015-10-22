@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Raspberry_pi | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/raspberry-pi/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-23T07:28:06+09:00</updated>
+  <updated>2015-10-23T07:50:02+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -32,21 +32,33 @@ sudo apt-get -y install tmux
 
 <h1>memo</h1>
 
-<h3>ウィンドウ移動</h3>
+<table>
+<thead>
+<tr>
+<th> 機能        </th>
+<th> キー      </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> ウィンドウ移動 </td>
+<td> ctrl-b o </td>
+</tr>
+<tr>
+<td> 水平分割    </td>
+<td> ctrl-b &ldquo; </td>
+</tr>
+<tr>
+<td> 垂直分割    </td>
+<td> ctrl-b % </td>
+</tr>
+<tr>
+<td> 分割解除    </td>
+<td> ctrl-b x </td>
+</tr>
+</tbody>
+</table>
 
-<p>ctrl-b o</p>
-
-<h3>水平分割</h3>
-
-<p>ctrl-b "</p>
-
-<h3>垂直分割</h3>
-
-<p>ctrl-b %</p>
-
-<h3>分割解除</h3>
-
-<p>ctrl-b x</p>
 
 <p>元ネタ
 <a href="http://kanjuku-tomato.blogspot.jp/2014/02/tmux.html">完熟トマト</a></p>
@@ -54,6 +66,28 @@ sudo apt-get -y install tmux
 <h1>感想</h1>
 
 <p>ctrl-bが辛い。その他良好。</p>
+
+<h1>遊び</h1>
+
+<p>画面分割、という機能は割となんにでも装備されているものです。<br/>
+- terminator<br/>
+- tmux<br/>
+- emacs<br/>
+- vim</p>
+
+<p>での端末分割・作成ができるようになりましたので、ここで一度遊んでみました。
+<img src="/images/tmux.png" alt="terminal" /></p>
+
+<ul>
+<li>左上がterminator</li>
+<li>左下がVimShell</li>
+<li>右上がtmux</li>
+<li>右下がemacsのansi-term</li>
+</ul>
+
+
+<p>です。遊んでみた結果、端末で端末の端末が開けるという事を実証できたことに満足。
+なんにせよ、これでraspberry pi での操作が簡単になります。</p>
 ]]></content>
   </entry>
   

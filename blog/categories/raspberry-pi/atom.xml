@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Raspberry_pi | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/raspberry-pi/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-23T07:23:44+09:00</updated>
+  <updated>2015-10-23T07:28:06+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -14,15 +14,15 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Tmux_memo]]></title>
+    <title type="html"><![CDATA[Tmux使ってみました]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/23/tmux-momo/"/>
     <updated>2015-10-23T07:05:20+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/23/tmux-momo</id>
     <content type="html"><![CDATA[<h1>install</h1>
 
-<p>以下の環境で動作確認済みです。
-- raspberry Pi
-- ubuntu15.04
+<p>以下の環境で動作確認済みです。<br/>
+- raspberry Pi<br/>
+- ubuntu15.04<br/>
 - ubuntu14.04LTS</p>
 
 <pre><code>sudo apt-get -y update

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Passport | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/passport/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-23T11:10:03+09:00</updated>
+  <updated>2015-10-23T20:52:28+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -18,7 +18,38 @@
     <link href="http://yusakusakamoto.github.io/blog/2015/10/23/passport04/"/>
     <updated>2015-10-23T10:50:12+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/23/passport04</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<h4>ウォーターフローモデル</h4>
+
+<p>手順
+1. 基本計画(実現目標)
+2. 外部設計(具体的な機能として定義)
+3. 内部設計(機能を実現する処理ごとにプログラムを分割する)
+4. プログラム設計(プログラムの構造を設計)
+5. プログラム(ロジック)
+6. テスト</p>
+
+<h4>ファンクションポイント法</h4>
+
+<p>開発工数を見積もる方法。機能数や複雑さによって重み付けした点数をつけることから。</p>
+
+<h4>構造化プログラミング</h4>
+
+<p>制約はあるが、保守しやすいプログラム。制御構造として、順次、選択、繰り返しの3種類が挙げられる。</p>
+
+<h3>共通フレーム2007</h3>
+
+<p>共通フレーム(SLCP-JCF)とは、SLCPの国際標準準拠であるISO/IEC 12207を日本の商習慣に合わせて拡張したものである。</p>
+
+<ol>
+<li>要件定義プロセスのアクティビティは利害関係者要件の定義</li>
+<li>企画プロセスのアクティビティはシステム化計画の立案</li>
+<li>開発プロセスのアクティビティはシステム方式設定とソフトウェア要件定義</li>
+</ol>
+
+
+<h4>企画プロセスの目的</h4>
+
+<p>経営事業の目的、目標を達成するために必要なシステム化の方針及びシステムを実現するための実施計画を得ること</p>
 ]]></content>
   </entry>
   

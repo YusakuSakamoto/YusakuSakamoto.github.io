@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Passport | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/passport/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-23T07:50:02+09:00</updated>
+  <updated>2015-10-23T10:52:47+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -14,6 +14,15 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Passport04]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/23/passport04/"/>
+    <updated>2015-10-23T10:50:12+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/23/passport04</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Passport05]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/20/passport05/"/>
     <updated>2015-10-20T15:29:19+09:00</updated>
@@ -21,13 +30,62 @@
     <content type="html"><![CDATA[<h4>PERT(Program Evaluation and Review Technique)</h4>
 
 <p>partではありません。pertです。
-IT用語辞典から
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>PERTとは、プロジェクトマネジメントの手法の一つで、各工程の依存関係を図示して所要期間を見積もったり、重要な工程を見極めたりする手法。1950年代に米海軍で弾道ミサイル開発プロジェクトのために考案された手法である。&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;PERTでは各工程を依存関係（前の工程が終わらないと、次の工程が始められない）に従って矢印で繋いでいき、それぞれの工程には所要時間を記入していく。出来上がったネットワーク図（アローダイアグラム、PERT図とも呼ばれる）にはプロジェクト開始から終了まで通常いくつかの経路が現れる。経路をたどって各工程の所要時間を足し合わせていくとその経路の所要時間が求められ、その中で最大のものがプロジェクト全体の工期の見積りとなる。</span></code></pre></td></tr></table></div></figure></p>
+IT用語辞典から</p>
+
+<p>PERTとは、プロジェクトマネジメントの手法の一つで、各工程の依存関係を図示して所要期間を見積もったり、重要な工程を見極めたりする手法。1950年代に米海軍で弾道ミサイル開発プロジェクトのために考案された手法である。</p>
+
+<p>PERTでは各工程を依存関係（前の工程が終わらないと、次の工程が始められない）に従って矢印で繋いでいき、それぞれの工程には所要時間を記入していく。出来上がったネットワーク図（アローダイアグラム、PERT図とも呼ばれる）にはプロジェクト開始から終了まで通常いくつかの経路が現れる。経路をたどって各工程の所要時間を足し合わせていくとその経路の所要時間が求められ、その中で最大のものがプロジェクト全体の工期の見積りとなる。</p>
+
+<h4>man-month</h4>
+
+<p>単位:人月について
+IT用語辞典から</p>
+
+<p>人月とは「人数×月」を意味し、プロジェクトに投入する人員と、月で表した一人あたりのプロジェクト従事期間の積を表す。1人で1ヶ月かかる仕事の量が1人月である。10人で6ヶ月かかれば60人月、100人で半月かかれば50人月となる。</p>
+
+<h4>開発規模</h4>
+
+<p>定義<br/>
+<code>
+開発規模 = 開発工数 ✕　生産量 / 単位時間
+</code></p>
+
+<p>ここで、<br/>
+<code>
+生産性 = 　生産量 / 単位時間
+</code></p>
+
+<h4>DOA</h4>
+
+<p>データ中心アプローチ(Data Oriented Approach:DOA)
+手法<br/>
+1. ERモデルをモデル化<br/>
+2. 正規化<br/>
+3. RDB(リレーショナル・データベースを)設計</p>
+
+<p>利点<br/>
+データの整合性、一貫性が保たれる</p>
+
+<h4>POA</h4>
+
+<p>プロセス指向アプローチ(Process Oriented Approach:POA)<br/>
+手法<br/>
+1. 業務の手順・工程を図に書き表す<br/>
+2. ソフトウェア・システムの挙動の決定</p>
+
+<p>欠点
+データの連続性が失われる。</p>
+
+<h4>WBS</h4>
+
+<p>作業分解図(Work Breakdown Structure:WBS)<br/>
+1. 全体を大きな単位に分割<br/>
+2. 細分割化(ワークパッケージの作成)</p>
+
+<h4>OBS</h4>
+
+<p>作業構成図(Organization Breakdown Structure:OBS)<br/>
+WBSで作成された作業の単位(ワークパッケージ)に責任者と担当者を配置したもの</p>
 ]]></content>
   </entry>
   
@@ -223,161 +281,6 @@ slack,trello,googleカレンダー,gmailなど<br/>
 <h5>ER図(Entity Relationship Modeling)</h5>
 
 <p>対象とする世界を実体と関連の２つで表現したもの。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Passport02]]></title>
-    <link href="http://yusakusakamoto.github.io/blog/2015/10/09/passport/"/>
-    <updated>2015-10-09T00:16:10+09:00</updated>
-    <id>http://yusakusakamoto.github.io/blog/2015/10/09/passport</id>
-    <content type="html"><![CDATA[<h1>SWOT分析</h1>
-
-<p>(Strengths,Weaknesses,Opportunities,Threats)<br/>
-Wikiより<br/>
-<code>
-目標を達成するために意思決定を必要としている組織や個人のプロジェクトやベンチャービジネスなどにおいて、外部環境や内部環境を強み、弱み、機会、脅威の4つのカテゴリーで要因分析し、事業環境変化に対応した経営資源の最適活用を図る経営戦略策定法の一つである。
-</code></p>
-
-<h1>ベンチマーキング</h1>
-
-<p>Wikiより
-<code>
-製品、サービス、プロセス、慣行(以前からのならわしとして通常行われること)を継続的に測定し、パフォーマンスの良い競合会社やその他の優良企業のパフォーマンスを定性的、定量的に比較すること
-</code></p>
-
-<h1>プロダクト・ポートフォリオマネジメント(PPM)</h1>
-
-<p>Wikiより<br/>
-<code>
-経営資源を最適に配分することを目的として、製品ライフサイクルと製品製造現場における経営曲線効果の概念を元にした経営理論。市場成長率、市場占有率の行程によって分析を行う。
-</code></p>
-
-<h2>金のなる木</h2>
-
-<p>市場成長率が低く、市場占有率が高い。追加的な投資があまり必要ではない。そのため、資金流入、利益が見込める分野で、成熟期ー衰退期に属する。</p>
-
-<h2>花型製品</h2>
-
-<p>市場成長率が高く、占有率も高い。つまり、資金流入も大きいが占有率の維持、拡大に多額の追加投資を必要とする。製品ライフサイクルにおける導入期ー成長期となる。</p>
-
-<h2>問題児</h2>
-
-<p>市場成長率が高く、市場占有率は低い。成長率が高い反面、占有率が低い分野。花型製品となるのか、負け犬製品となるのかが別れる時期で、製品ライフサイクルにおける導入期ー成長期になる.</p>
-
-<h2>負け犬</h2>
-
-<p>市場成長率が低く、市場占有率も低い。撤退が検討される分野で、製品ライフスタイルにおける成熟期ー衰退期における。</p>
-
-<h2>ポートフォリオ(Portfolio)</h2>
-
-<p>集められた資料や情報そのもの全体を意味する場合もある。</p>
-
-<h2>プロダクト・ポートフォリオの目的</h2>
-
-<p>目的はあくまで、資金の配分をどうするか、撤退をするのか促進をするのかを判断することである。</p>
-
-<h1>MOT(Management of Technology)</h1>
-
-<p>Wikiより
-<code>
-日本語では、技術経営という言葉で扱う。イノベーションの創出をマネジメントし、新しい技術を取り入れながら事業を行う企業・組織が、持続的発展のために、技術を含めて総合的に経営管理を行い、経済的価値を生み出していくための戦略を立案、決定、実行することが目的である。
-</code></p>
-
-<h1>プロダクトライフサイクル</h1>
-
-<p>Wikiより<br/>
-<code>
-製品が市場に投入されてから、次第に売れなくなり姿を消すまでのプロセスのことをいう。市場における製品寿命を示すものである。  
-1. 導入期  
-2. 成長期  
-3. 成熟期  
-4. 衰退期
-</code></p>
-
-<h1>コアコンピタンス経営(core competence)</h1>
-
-<p>Wikiより
-<code>
-他社には真似のできない、企業独自のノウハウや技術などの強みを核とした経営を行うことを指す。
-</code></p>
-
-<h1>M&amp;A(mergers and acquisitions)合併と買収</h1>
-
-<p>Wikiより
-<code>
-他の企業を取得しようとする際には買収者やその子会社などに吸収合併させるほか、買収先企業の株式を買収して子会社化する手段が用いられることから、およそ企業の取得という効果に着目して合併と買収を総称するものである。
-</code>
-<a href="http://u-note.me/note/47486302">M&amp;Aの利点と欠点について、説明しているページ</a></p>
-
-<h1>情報戦略</h1>
-
-<p><code>
-企業全体の情報資源をどのように活用していくかを具体化した、中ー長期に渡る戦略である。情報戦略とは、経営戦略によって策定される戦略の一つ。
-</code></p>
-
-<h1>コーポレートアイデンティティ(CI)</h1>
-
-<p>企業文化を構築し、特性や独自性を統一されたイメージやデザインやメッセージで発信し、、社会と共有することで存在価値を高めていく企業戦略の一つ。</p>
-
-<h1>ニッチ市場について</h1>
-
-<p>市場全体の一部を構成する特定のニーズを持つ規模の小さい市場のこと。隙間市場ともいい、市場の発見はニッチを開拓するなどという使用方法をする</p>
-
-<h1><a href="http://www.itl-net.com/bsc/bsc7.html">重要成功分析(CSF:Critical Success Factor)</a></h1>
-
-<p>重要成功要因の洗い出し手順<br/>
-1. 戦略目標を達成するための要因をできる限り多く洗い出す<br/>
-2. 洗いだした要因の中から、最も重要なものを選択する<br/>
-3. 2.で選択した要因が戦略目標を実現するために因果関係があるかどうかを熟考し、重要成功要因として決定する</p>
-
-<p>全社的なレベルまでまとめられた後に、個人レベルまでブレークダウンされ、具体化される。</p>
-
-<h1>AIDMA(アイドマ)の法則</h1>
-
-<ol>
-<li>Attention(注意)</li>
-<li>Interest(関心)</li>
-<li>Desire(要求)</li>
-<li>Memory(記憶)</li>
-<li>Action(行動)</li>
-</ol>
-
-
-<h1>マーケティングミックス</h1>
-
-<p><a href="http://viral-community.com/starting-side-business/marketing-mix-4p-4c-4731/">マーケティングミックスの良説</a></p>
-
-<h1>マーケットイン</h1>
-
-<p>コトバンクより
-<code>
-商品の企画開発や生産において、消費者のニーズを重視する方法。製品ありきではなく、顧客ありきの販売戦略。
-</code></p>
-
-<h1>CRM</h1>
-
-<p>(Customer Relationship Management)</p>
-
-<h1>ANSI</h1>
-
-<p>(American National Standards Institute)</p>
-
-<h1>ISO</h1>
-
-<p>(International Organization for Standardization)</p>
-
-<h1>IEEE(アイ・トリプルイー)</h1>
-
-<p>(The Institute of Electrical and Electronics Engineers)</p>
-
-<h1>JIS</h1>
-
-<p>(Japanese Industrial Standards)</p>
-
-<h1>SET</h1>
-
-<p>(Secure Electronic Transaction)</p>
 ]]></content>
   </entry>
   

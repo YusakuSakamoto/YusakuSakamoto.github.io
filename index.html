@@ -9,15 +9,8 @@
   <meta name="author" content="Yusaku Sakamoto">
 
   
-  <meta name="description" content="install 以下の環境で動作確認済みです。
-- raspberry Pi
-- ubuntu15.04
-- ubuntu14.04LTS 1
-2
-3
-sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y install &hellip;">
+  <meta name="description" content="
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,6 +66,64 @@ sudo apt-get -y install &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/10/23/passport04/">Passport04</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-10-23T10:50:12+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>10:50 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/10/23/raspi-pwm/">Raspi_pwm</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-10-23T10:38:10+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>10:38 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><video width='640' height='320' preload='metadata' controls ><source src='/source/videos/20151020_091839.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -329,15 +380,60 @@ p型半導体（ピーがたはんどうたい）とは、電荷を運ぶキャ�
 <p>partではありません。pertです。
 IT用語辞典から</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>PERTとは、プロジェクトマネジメントの手法の一つで、各工程の依存関係を図示して所要期間を見積もったり、重要な工程を見極めたりする手法。1950年代に米海軍で弾道ミサイル開発プロジェクトのために考案された手法である。
-</span><span class='line'>
-</span><span class='line'>PERTでは各工程を依存関係（前の工程が終わらないと、次の工程が始められない）に従って矢印で繋いでいき、それぞれの工程には所要時間を記入していく。出来上がったネットワーク図（アローダイアグラム、PERT図とも呼ばれる）にはプロジェクト開始から終了まで通常いくつかの経路が現れる。経路をたどって各工程の所要時間を足し合わせていくとその経路の所要時間が求められ、その中で最大のものがプロジェクト全体の工期の見積りとなる。</span></code></pre></td></tr></table></div></figure>
+<p>PERTとは、プロジェクトマネジメントの手法の一つで、各工程の依存関係を図示して所要期間を見積もったり、重要な工程を見極めたりする手法。1950年代に米海軍で弾道ミサイル開発プロジェクトのために考案された手法である。</p>
 
+<p>PERTでは各工程を依存関係（前の工程が終わらないと、次の工程が始められない）に従って矢印で繋いでいき、それぞれの工程には所要時間を記入していく。出来上がったネットワーク図（アローダイアグラム、PERT図とも呼ばれる）にはプロジェクト開始から終了まで通常いくつかの経路が現れる。経路をたどって各工程の所要時間を足し合わせていくとその経路の所要時間が求められ、その中で最大のものがプロジェクト全体の工期の見積りとなる。</p>
 
+<h4>man-month</h4>
 
+<p>単位:人月について
+IT用語辞典から</p>
+
+<p>人月とは「人数×月」を意味し、プロジェクトに投入する人員と、月で表した一人あたりのプロジェクト従事期間の積を表す。1人で1ヶ月かかる仕事の量が1人月である。10人で6ヶ月かかれば60人月、100人で半月かかれば50人月となる。</p>
+
+<h4>開発規模</h4>
+
+<p>定義<br/>
+<code>
+開発規模 = 開発工数 ✕　生産量 / 単位時間
+</code></p>
+
+<p>ここで、<br/>
+<code>
+生産性 = 　生産量 / 単位時間
+</code></p>
+
+<h4>DOA</h4>
+
+<p>データ中心アプローチ(Data Oriented Approach:DOA)
+手法<br/>
+1. ERモデルをモデル化<br/>
+2. 正規化<br/>
+3. RDB(リレーショナル・データベースを)設計</p>
+
+<p>利点<br/>
+データの整合性、一貫性が保たれる</p>
+
+<h4>POA</h4>
+
+<p>プロセス指向アプローチ(Process Oriented Approach:POA)<br/>
+手法<br/>
+1. 業務の手順・工程を図に書き表す<br/>
+2. ソフトウェア・システムの挙動の決定</p>
+
+<p>欠点
+データの連続性が失われる。</p>
+
+<h4>WBS</h4>
+
+<p>作業分解図(Work Breakdown Structure:WBS)<br/>
+1. 全体を大きな単位に分割<br/>
+2. 細分割化(ワークパッケージの作成)</p>
+
+<h4>OBS</h4>
+
+<p>作業構成図(Organization Breakdown Structure:OBS)<br/>
+WBSで作成された作業の単位(ワークパッケージ)に責任者と担当者を配置したもの</p>
 </div>
   
   
@@ -747,140 +843,6 @@ slack,trello,googleカレンダー,gmailなど<br/>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/10/10/transistor/">Transistor</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-10-10T00:00:26+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>12:00 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>トランジスタの役割</h1>
-
-<p>トランジスタは、電圧・電流を増幅させる働きを持ちます。携帯電話は、空気中を伝わってくる電波(微弱な電気信号)を増幅して、通信が可能な信号にしているようです。<br/>
-<img src="http://akizukidenshi.com/img/goods/C/I-08423.jpg" alt="Nch MOSFET EKI04047" /></p>
-
-<p>トランジスタの種類には、以下のものがある<br/>
-1. バイポーラ・トランジスタ<br/>
-2. Field Effect Transistor</p>
-
-<h2>バイポーラ・トランジスタ</h2>
-
-<p>バイポーラトランジスタには、以下のものがある<br/>
-1. NPN型トランジスタ<br/>
-2. PNP型トランジスタ<br/>
-バイポーラトランジスタの場合、端子はコレクタ・ベース・エミッタの3種類が存在する。</p>
-
-<h2>バイポーラトランジスタは電流制御に用いられる。</h2>
-
-<p>バイポーラトランジスタの場合、コレクタ・ベース・エミッタ間は電気的につながっている。</p>
-
-<h2>FET(Field Effect Transistor)</h2>
-
-<p>Field Effect Transistor(電界効果トランジスタ)には、次の種類がある。<br/>
-1. Nチャネル<br/>
-2. Pチャネル<br/>
-FETの場合、ソース、ドレイン、ゲートの3種類が存在する。</p>
-
-<h2>MOSFETは電圧の制御で用いられる。</h2>
-
-<p>MOSとは、金属酸化膜型のこと。
-MOSFETの場合、ゲート端子が浮いていることになる。</p>
-
-<h2>記号の意味</h2>
-
-<ol>
-<li>Vdss(ドレイン・ソース間電圧[Drain-source voltage])-最大何ボルトまで接続できるか</li>
-<li>ld(ドレイン電流[Gate threshold voltage])-最大何アンペアの電流を流せるか</li>
-<li>Vth(ゲートしきい値電圧[Gate threshold voltage])-負荷をON/OFFさせるときのゲート電圧の境</li>
-<li>Rds(ドレイン・ソース間オン抵抗値[Drain.source ON resistance])オン抵抗値</li>
-</ol>
-
-
-<h2>プルアップ抵抗／プルダウン抵抗</h2>
-
-<p>プルアップ・プルダウン抵抗を使用する目的は、信号を確実に伝えるためにあります。参考資料の3に良い解説があります。</p>
-
-<h1>参考文献</h1>
-
-<ol>
-<li><a href="http://www.geocities.jp/zattouka/GarageHouse/micon/circuit/FET.htm">ＦＥＴをマイコン出力のスイッチとして使う方法</a></li>
-<li><a href="http://miqn.net/periph/63.html">マイコン徹底入門</a></li>
-<li><a href="http://www.geocities.jp/zattouka/GarageHouse/micon/circuit/pullup.htm">プルアップ抵抗／プルダウン抵抗について</a></li>
-</ol>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/10/09/ubuntu-setup/">Ubuntu_setup</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-10-09T18:46:34+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>6:46 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>ubuntu setup</h1>
-
-<p>最初にubuntuにインストールするシェルスクリプトです。
-任意の場所にinstall.shの名前で保存します。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>supo sh install.sh</span></code></pre></td></tr></table></div></figure>
-
-
-<p>でインストールを始めてください</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/bash
-</span><span class='line'>
-</span><span class='line'>sudo apt-get -y update
-</span><span class='line'>sudo apt-get -y upgrade
-</span><span class='line'>sudo apt-get -y install emacs vim git gitk gcc g++ gfortran gnuplot terminator build-essential libgtk2.0-dev libjpeg-dev libjasper-dev libopenexr-dev cmake python-dev python-numpy python-tk libtbb-dev libeigen3-dev yasm libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev libqt4-dev libqt4-opengl-dev sphinx-common texlive-latex-extra libv4l-dev libdc1394-22-dev libavcodec-dev libavformat-dev libswscale-dev default-jdk ant libvtk5-qt4-dev ibus-mozc arduino keepass2 nautilus-dropbox texlive libopencv-dev python-opencv cmake gparted inkscape mercurial  automake libtool freeglut3-dev xdotool unetbootin texlive-lang-cjk xdotool</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -896,6 +858,14 @@ MOSFETの場合、ゲート端子が浮いていることになる。</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/10/23/passport04/">Passport04</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/23/raspi-pwm/">Raspi_pwm</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/10/23/tmux-momo/">Tmux使ってみました</a>
       </li>
     
@@ -905,14 +875,6 @@ MOSFETの場合、ゲート端子が浮いていることになる。</p>
     
       <li class="post">
         <a href="/blog/2015/10/20/passport05/">Passport05</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/10/19/raspi1/">Raspi1</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/10/19/passport07/">Passport07</a>
       </li>
     
   </ul>

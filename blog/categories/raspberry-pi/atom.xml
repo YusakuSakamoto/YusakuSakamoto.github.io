@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Raspberry_pi | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/raspberry-pi/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-23T11:07:54+09:00</updated>
+  <updated>2015-10-23T11:10:03+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<h1>raspberry_Piでpwm信号を扱う</h1>
 
 <p>以下の動画の様なことをしました。
-Error processing input, expected syntax: {% video url/to/video [url/to/video] [url/to/video] [width height] [url/to/poster] %}</p>
+<video width='640' height='320' preload='metadata' controls ><source src='/images/raspi2.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
 
 <p>レポジトリraspiにプログラムを追加。</p>
 ]]></content>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Centos7 | 活動日記]]></title>
+  <link href="http://yusakusakamoto.github.io/blog/categories/centos7/atom.xml" rel="self"/>
+  <link href="http://yusakusakamoto.github.io/"/>
+  <updated>2015-10-27T06:47:04+09:00</updated>
+  <id>http://yusakusakamoto.github.io/</id>
+  <author>
+    <name><![CDATA[Yusaku Sakamoto]]></name>
+    <email><![CDATA[yskibouyskibou@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CentOS7のインストール]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/27/centos7-install/"/>
+    <updated>2015-10-27T05:49:08+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/27/centos7-install</id>
+    <content type="html"><![CDATA[<p><img src="http://mireiasangalo.com/wp-content/uploads/2013/09/centos-splash.png" alt="logo" />
+<img src="/images/centos7.png" alt="centos" /></p>
+
+<h1>基本の知識</h1>
+
+<p>CentOSは、Red Hat系linuxであり、RHELの完全互換を目指した無料のlinux distributionである。</p>
+
+<p>ROSでdistroという言葉が出てきていましたが、distro = distributionだそうです。もちろん、debianではないので<strong>aptは使えません。</strong>では、その代わりに何があるのかというと、yum(Yellowdog Updater Modified)というメタパッケージ管理システムが用意されています。</p>
+
+<p>しかし、デフォルトの状態であれば、入れることができるアプリケーションは非常に限定的であり、レポジトリを新たに追加するという人が多いようです。</p>
+
+<p>管理ファイルは、/etc/yum.repos.dのレポジトリ。<br/>
+ここに.repoファイルを作成すればいいようです。</p>
+
+<h2>yumのレポジトリを確認する</h2>
+
+<p><code>
+yum repolist
+</code></p>
+
+<p>私の環境(入れたばかり)の状況では、以下のものが出ました。
+<code>
+読み込んだプラグイン:fastestmirror, langpacks
+Determining fastest mirrors
+ * base: ftp.iij.ad.jp
+ * extras: ftp.iij.ad.jp
+ * updates: ftp.iij.ad.jp
+リポジトリー ID                  リポジトリー名                      状態
+base/7/x86_64                    CentOS-7 - Base                     8,652
+extras/7/x86_64                  CentOS-7 - Extras                     236
+updates/7/x86_64                 CentOS-7 - Updates                  1,531
+repolist: 10,419
+</code></p>
+
+<h2>レポジトリの説明</h2>
+
+<p>私はなんの気無しにiijというミラーサイトのOSをダウンロードして入れてみましたが、iijとはおそらく(internet initiative japan)の会社のことです。日本の会社であるので、もうあらかたの日本語環境は導入済みなようです。ここでは、予めOSのイメージを作成した際に、これは絶対に必要だと判断されたもののパッケージがbase,extras,updatesというレポジトリとして存在しています。</p>
+
+<p>では、yumにレポジトリの追加をしていきます。とりあえず、以下の３種類のものをとりあえず入れたら?みたいな感じで様々なサイトに記載していましたので、どのようなレポジトリなのかを調べてみましょう。</p>
+
+<ul>
+<li>rpmforge</li>
+<li>epel</li>
+<li>remi</li>
+</ul>
+
+
+<h1>参考文献</h1>
+
+<ol>
+<li><a href="http://www.unix-power.net/linux/yum.html">UnixPower on Networking</a></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

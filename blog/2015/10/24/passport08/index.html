@@ -5,18 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Ubuntu_setup - 活動日記</title>
+  <title>Passport08 - 活動日記</title>
   <meta name="author" content="Yusaku Sakamoto">
 
   
-  <meta name="description" content="ubuntu setup 最初にubuntuにインストールするシェルスクリプトです。
-任意の場所にinstall.shの名前で保存します。 1
-supo sh install.sh でインストールを始めてください 1
-2
-3
-4
-5
-#!/bin/bash sudo apt-get -y &hellip;">
+  <meta name="description" content="キャッシュメモリ 主記憶とのアクセス時間を見かけ上短縮することによって、CPUの処理効率を高める。 フラッシュメモリ フラッシュメモリは、不揮発性(電源を切っても記録が消えない)のメモリで、これをカードがあにしたものがメモリカードと呼ばれる。 DRAM DRAM(Dynamic Random &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -25,7 +18,7 @@ supo sh install.sh でインストールを始めてください 1
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yusakusakamoto.github.io/blog/2015/10/09/ubuntu-setup/">
+  <link rel="canonical" href="http://yusakusakamoto.github.io/blog/2015/10/24/passport08/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="活動日記" type="application/atom+xml">
@@ -75,7 +68,7 @@ supo sh install.sh でインストールを始めてください 1
   
   <header>
     
-      <h1 class="entry-title">Ubuntu_setup</h1>
+      <h1 class="entry-title">Passport08</h1>
     
     
       <p class="meta">
@@ -84,37 +77,70 @@ supo sh install.sh でインストールを始めてください 1
 
 
 
-<time class='entry-date' datetime='2015-10-09T18:46:34+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>6:46 pm</span></time>
+<time class='entry-date' datetime='2015-10-24T08:59:09+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>8:59 am</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h1>ubuntu setup</h1>
+<div class="entry-content"><h4>キャッシュメモリ</h4>
 
-<p>最初にubuntuにインストールするシェルスクリプトです。
-任意の場所にinstall.shの名前で保存します。</p>
+<p>主記憶とのアクセス時間を見かけ上短縮することによって、CPUの処理効率を高める。</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>supo sh install.sh</span></code></pre></td></tr></table></div></figure>
+<h4>フラッシュメモリ</h4>
+
+<p>フラッシュメモリは、不揮発性(電源を切っても記録が消えない)のメモリで、これをカードがあにしたものがメモリカードと呼ばれる。</p>
+
+<h4>DRAM</h4>
+
+<p>DRAM(Dynamic Random Access Memory)は、単純で安価であるので、多用される。電荷は時間と共に減少するので、一定時間ごとに記憶保持のための再書込(リフレッシュ)を行う必要がある。電源が切れると、記録が消えてしまうので、揮発性である。</p>
+
+<h4>RAID</h4>
+
+<p>信頼性、予算、速度のどれに重きを置くのかによってレベルが用意されている。</p>
+
+<table>
+<thead>
+<tr>
+<th>RAIDレベル</th>
+<th>内容          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RAID0    </td>
+<td> ストライピング  </td>
+</tr>
+<tr>
+<td>RAID1    </td>
+<td> ミラーリング   </td>
+</tr>
+<tr>
+<td>RAID2    </td>
+<td> ハミング符号による耐障害性保証</td>
+</tr>
+<tr>
+<td>RADI3    </td>
+<td> パリティによる障害性保証</td>
+</tr>
+<tr>
+<td>RAID4    </td>
+<td> パリティによるブロック単位記録</td>
+</tr>
+<tr>
+<td>RAID5    </td>
+<td> パリティによるブロック単位分散記録</td>
+</tr>
+<tr>
+<td>RAID6    </td>
+<td> パリティによるブロック単位分散記録の方法にもう一手間</td>
+</tr>
+</tbody>
+</table>
 
 
-<p>でインストールを始めてください</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/bash
-</span><span class='line'>
-</span><span class='line'>sudo apt-get -y update
-</span><span class='line'>sudo apt-get -y upgrade
-</span><span class='line'>sudo apt-get -y install emacs vim git gitk gcc g++ gfortran gnuplot terminator build-essential libgtk2.0-dev libjpeg-dev libjasper-dev libopenexr-dev cmake python-dev python-numpy python-tk libtbb-dev libeigen3-dev yasm libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev libqt4-dev libqt4-opengl-dev sphinx-common texlive-latex-extra libv4l-dev libdc1394-22-dev libavcodec-dev libavformat-dev libswscale-dev default-jdk ant libvtk5-qt4-dev ibus-mozc arduino keepass2 nautilus-dropbox texlive libopencv-dev python-opencv cmake gparted inkscape mercurial  automake libtool freeglut3-dev xdotool unetbootin texlive-lang-cjk xdotool</span></code></pre></td></tr></table></div></figure>
-
-
-
+<h4>シリアルATA(SATA)</h4>
 </div>
 
 
@@ -130,15 +156,21 @@ supo sh install.sh でインストールを始めてください 1
 
 
 
-<time class='entry-date' datetime='2015-10-09T18:46:34+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>6:46 pm</span></time>
+<time class='entry-date' datetime='2015-10-24T08:59:09+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>8:59 am</span></time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/passport/'>passport</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yusakusakamoto.github.io/blog/2015/10/09/ubuntu-setup/" data-via="" data-counturl="http://yusakusakamoto.github.io/blog/2015/10/09/ubuntu-setup/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yusakusakamoto.github.io/blog/2015/10/24/passport08/" data-via="" data-counturl="http://yusakusakamoto.github.io/blog/2015/10/24/passport08/" >Tweet</a>
   
   
   
@@ -147,10 +179,10 @@ supo sh install.sh でインストールを始めてください 1
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2015/10/09/resume2/" title="Previous Post: 新しい有志のためのガイダンス2">&laquo; 新しい有志のためのガイダンス2</a>
+        <a class="basic-alignment left" href="/blog/2015/10/23/passport04/" title="Previous Post: passport04">&laquo; passport04</a>
       
       
-        <a class="basic-alignment right" href="/blog/2015/10/10/transistor/" title="Next Post: transistor">transistor &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2015/10/27/centos7-install/" title="Next Post: CentOS7のインストール">CentOS7のインストール &raquo;</a>
       
     </p>
   </footer>

@@ -4,7 +4,7 @@
   <title><![CDATA[活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-23T20:52:28+09:00</updated>
+  <updated>2015-10-27T06:47:04+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -12,6 +12,142 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[CentOS7のインストール]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/27/centos7-install/"/>
+    <updated>2015-10-27T05:49:08+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/27/centos7-install</id>
+    <content type="html"><![CDATA[<p><img src="http://mireiasangalo.com/wp-content/uploads/2013/09/centos-splash.png" alt="logo" />
+<img src="http://yusakusakamoto.github.io/images/centos7.png" alt="centos" /></p>
+
+<h1>基本の知識</h1>
+
+<p>CentOSは、Red Hat系linuxであり、RHELの完全互換を目指した無料のlinux distributionである。</p>
+
+<p>ROSでdistroという言葉が出てきていましたが、distro = distributionだそうです。もちろん、debianではないので<strong>aptは使えません。</strong>では、その代わりに何があるのかというと、yum(Yellowdog Updater Modified)というメタパッケージ管理システムが用意されています。</p>
+
+<p>しかし、デフォルトの状態であれば、入れることができるアプリケーションは非常に限定的であり、レポジトリを新たに追加するという人が多いようです。</p>
+
+<p>管理ファイルは、/etc/yum.repos.dのレポジトリ。<br/>
+ここに.repoファイルを作成すればいいようです。</p>
+
+<h2>yumのレポジトリを確認する</h2>
+
+<p><code>
+yum repolist
+</code></p>
+
+<p>私の環境(入れたばかり)の状況では、以下のものが出ました。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>読み込んだプラグイン:fastestmirror, langpacks
+</span><span class='line'>Determining fastest mirrors
+</span><span class='line'> * base: ftp.iij.ad.jp
+</span><span class='line'> * extras: ftp.iij.ad.jp
+</span><span class='line'> * updates: ftp.iij.ad.jp
+</span><span class='line'>リポジトリー ID                  リポジトリー名                      状態
+</span><span class='line'>base/7/x86_64                    CentOS-7 - Base                     8,652
+</span><span class='line'>extras/7/x86_64                  CentOS-7 - Extras                     236
+</span><span class='line'>updates/7/x86_64                 CentOS-7 - Updates                  1,531
+</span><span class='line'>repolist: 10,419</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>レポジトリの説明</h2>
+
+<p>私はなんの気無しにiijというミラーサイトのOSをダウンロードして入れてみましたが、iijとはおそらく(internet initiative japan)の会社のことです。日本の会社であるので、もうあらかたの日本語環境は導入済みなようです。ここでは、予めOSのイメージを作成した際に、これは絶対に必要だと判断されたもののパッケージがbase,extras,updatesというレポジトリとして存在しています。</p>
+
+<p>では、yumにレポジトリの追加をしていきます。とりあえず、以下の３種類のものをとりあえず入れたら?みたいな感じで様々なサイトに記載していましたので、どのようなレポジトリなのかを調べてみましょう。</p>
+
+<ul>
+<li>rpmforge</li>
+<li>epel</li>
+<li>remi</li>
+</ul>
+
+
+<h1>参考文献</h1>
+
+<ol>
+<li><a href="http://www.unix-power.net/linux/yum.html">UnixPower on Networking</a></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Passport08]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/10/24/passport08/"/>
+    <updated>2015-10-24T08:59:09+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/10/24/passport08</id>
+    <content type="html"><![CDATA[<h4>キャッシュメモリ</h4>
+
+<p>主記憶とのアクセス時間を見かけ上短縮することによって、CPUの処理効率を高める。</p>
+
+<h4>フラッシュメモリ</h4>
+
+<p>フラッシュメモリは、不揮発性(電源を切っても記録が消えない)のメモリで、これをカードがあにしたものがメモリカードと呼ばれる。</p>
+
+<h4>DRAM</h4>
+
+<p>DRAM(Dynamic Random Access Memory)は、単純で安価であるので、多用される。電荷は時間と共に減少するので、一定時間ごとに記憶保持のための再書込(リフレッシュ)を行う必要がある。電源が切れると、記録が消えてしまうので、揮発性である。</p>
+
+<h4>RAID</h4>
+
+<p>信頼性、予算、速度のどれに重きを置くのかによってレベルが用意されている。</p>
+
+<table>
+<thead>
+<tr>
+<th>RAIDレベル</th>
+<th>内容          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RAID0    </td>
+<td> ストライピング  </td>
+</tr>
+<tr>
+<td>RAID1    </td>
+<td> ミラーリング   </td>
+</tr>
+<tr>
+<td>RAID2    </td>
+<td> ハミング符号による耐障害性保証</td>
+</tr>
+<tr>
+<td>RADI3    </td>
+<td> パリティによる障害性保証</td>
+</tr>
+<tr>
+<td>RAID4    </td>
+<td> パリティによるブロック単位記録</td>
+</tr>
+<tr>
+<td>RAID5    </td>
+<td> パリティによるブロック単位分散記録</td>
+</tr>
+<tr>
+<td>RAID6    </td>
+<td> パリティによるブロック単位分散記録の方法にもう一手間</td>
+</tr>
+</tbody>
+</table>
+
+
+<h4>シリアルATA(SATA)</h4>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Passport04]]></title>

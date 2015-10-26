@@ -9,9 +9,7 @@
   <meta name="author" content="Yusaku Sakamoto">
 
   
-  <meta name="description" content="トランジスタの役割 トランジスタは、電圧・電流を増幅させる働きを持ちます。携帯電話は、空気中を伝わってくる電波(微弱な電気信号)を増幅して、通信が可能な信号にしているようです。 トランジスタの種類には、以下のものがある
-1. バイポーラ・トランジスタ
-2. Field Effect &hellip;">
+  <meta name="description" content="SFA(Sales Force Automation) 情報通信技術(IT)を利用して、営業に関するタスクを自動化・支援しようという考え方のこと。 BPO(Business Process Outsourcing) 企業運営上の業務や、ビジネスプロセスを専門企業に受託することを示す。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +65,149 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/10/13/passport3/">Passport03</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-10-13T15:44:01+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:44 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h5>SFA(Sales Force Automation)</h5>
+
+<p>情報通信技術(IT)を利用して、営業に関するタスクを自動化・支援しようという考え方のこと。</p>
+
+<h5>BPO(Business Process Outsourcing)</h5>
+
+<p>企業運営上の業務や、ビジネスプロセスを専門企業に受託することを示す。日本では沖縄や北海道にコールセンターなどの業務を委託する例がある</p>
+
+<h5>BPR(Business Process Re-engineering)</h5>
+
+<p>企業活動や業務の流れを分析し、最適化すること。根本的に設計し直すことで、劇的な効率の上昇を図る。</p>
+
+<h5>BPM(Business Process Management)</h5>
+
+<p>最適な業務へと改善を続けていく取り組み。BPMとの違いは、短期的で大規模な改革ではなく、長期的な進化を図る、ということ。</p>
+
+<h5>グループウェア</h5>
+
+<p>グループウェアの持つ主な機能は、以下の通り<br/>
+- 電子メール機能<br/>
+- 電子掲示板機能<br/>
+- ドキュメント共有機能<br/>
+- スケジュール機能<br/>
+- ワークフローシステム機能<br/>
+- 設備予約機能<br/>
+- ファイル共有機能</p>
+
+<p>自分が使っているグループウェア<br/>
+slack,trello,googleカレンダー,gmailなど<br/>
+結構各々独立しています。</p>
+
+<h5>DFD(データフローダイアグラム)</h5>
+
+<p>業務などをデータの流れに注目して視覚的に表現したもの</p>
+
+<h5>ER図(Entity Relationship Modeling)</h5>
+
+<p>対象とする世界を実体と関連の２つで表現したもの。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/10/13/vimguan-lian-1/">Vim1</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-10-13T08:04:13+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>8:04 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Icon-Vim.svg" alt="" /></p>
+
+<h1>vim設定ファイルの.vimrcをemacsで編集するという矛盾</h1>
+
+<p>今までemacsを使っていたのですが、後輩にvimを扱う者が現れまして、なかなかに使いやすそうだなと思ってちょっと挑戦してみました。もともと少し練習したことがありましたので、ちょっとした編集くらいはできていましたが、今回は<strong>設定ファイル</strong>を編集しました。</p>
+
+<h2>.vimについて</h2>
+
+<p>.vimは自分で編集した*.vim等を置いておくディレクトリだそうですが、私はこれに関しては開発者側に回る気はさらさらないので、githubからひたすらcloneしてきたものを保存していくディレクトリになります。</p>
+
+<h2>.vimrcについて</h2>
+
+<p>.vimrcは、事細かな設定をするときに使用します。例えば、色の設定をするときなどは、ここをいじります。実際にいじってみて、難易度はまあ、.emacs.dをいじった人であれば余裕であろうと思います。</p>
+
+<h2>pasteってどうするんだ</h2>
+
+<p>はい、ここでemacsをついつい立ち上げてしまった、という話です。というのも、例えばfirefoxで見つけた文字列をコピーしようとした時に、ペースト[p]ではうまく行かないのです!!なんと言うことなのでしょうか。ああ、emacs使いやすいなぁ&hellip;</p>
+
+<p>調べてみた結果、vim-gtkなりのclipboardが使えるようなパッケージ入りのものをインストールすれば、自然にクリップボードからのコピーにも対応できるようになるよ、という事らしいです。よって、</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install vim-gtk</span></code></pre></td></tr></table></div></figure>
+
+
+<hr />
+
+<h2>vimshellを入れてみた、という話</h2>
+
+<p>neobundleとかいう管理方法をインストールしてみた結果、結構使いやすかったと言いますか、vim側が勝手に全部やってくれます。素晴らしいです。vimshellだけは少しコンパイルして動作環境に適合させないといけないみたいですが、それ以外は全部自動です。</p>
+
+<p>.vimrcの設定</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://github.com/YusakuSakamoto/dotfiles ~/dotfiles
+</span><span class='line'>sh ~/dotfiles/link.sh</span></code></pre></td></tr></table></div></figure>
+
+
+<p>neobundleの設定</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir .vim
+</span><span class='line'>mkdir -p ~.vim/bundle
+</span><span class='line'>git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim</span></code></pre></td></tr></table></div></figure>
+
+
+<p>vimを立ち上げると、環境を自動的に入れてくれます。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -792,6 +933,14 @@ PS3コントローラーを使っていました。ROSは使っていません�
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/10/27/centos7-install/">CentOS7のインストール</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/24/passport08/">Passport08</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/10/23/passport04/">Passport04</a>
       </li>
     
@@ -801,14 +950,6 @@ PS3コントローラーを使っていました。ROSは使っていません�
     
       <li class="post">
         <a href="/blog/2015/10/23/tmux-momo/">Tmux使ってみました</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/10/20/half-wave-rectifier-circuit/">半波整流</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/10/20/passport05/">Passport05</a>
       </li>
     
   </ul>

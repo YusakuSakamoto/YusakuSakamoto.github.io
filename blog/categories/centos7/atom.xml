@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Centos7 | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/centos7/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-27T17:41:32+09:00</updated>
+  <updated>2015-10-27T17:45:43+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -141,15 +141,15 @@ yumのgroup-installを使えばいいようですね。存在は知っていま�
 <p>なんか気持ち悪い&hellip;.<br/>
 しかし入りました。
 <code>
- yum install gcc make ncurses-devel gtk+ gtk3-devel.x86_64
- yum install giflib-devel libjpeg-devel libtiff-devel
- cd /usr/local/src
- wget http://mirror.bjtu.edu.cn/gnu/emacs/emacs-24.4.tar.gz
- tar xzvf emacs-24.4.tar.gz
- cd emacs-24.4
- ./configure --without-all --with-x-toolkit=no --without-x
- sudo make
- sudo make install
+yum install gcc make ncurses-devel gtk+ gtk3-devel.x86_64
+yum install giflib-devel libjpeg-devel libtiff-devel
+cd /usr/local/src
+wget http://mirror.bjtu.edu.cn/gnu/emacs/emacs-24.4.tar.gz
+tar xzvf emacs-24.4.tar.gz
+cd emacs-24.4
+./configure --without-all --with-x-toolkit=no --without-x
+sudo make
+sudo make install
 </code></p>
 
 <h2>gitのバージョンアップ</h2>

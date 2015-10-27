@@ -244,32 +244,18 @@ install方法を示します。</p>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'> yum install gcc make ncurses-devel gtk+ gtk3-devel.x86_64
-</span><span class='line'> yum install giflib-devel libjpeg-devel libtiff-devel
-</span><span class='line'> cd /usr/local/src
-</span><span class='line'> wget http://mirror.bjtu.edu.cn/gnu/emacs/emacs-24.4.tar.gz
-</span><span class='line'> tar xzvf emacs-24.4.tar.gz
-</span><span class='line'> cd emacs-24.4
-</span><span class='line'> ./configure --without-all --with-x-toolkit=no --without-x
-</span><span class='line'> sudo make
-</span><span class='line'> sudo make install
-</span><span class='line'> ```
-</span><span class='line'>
-</span><span class='line'>##gitのバージョンアップ</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>yum install gcc make ncurses-devel gtk+ gtk3-devel.x86_64
+</span><span class='line'>yum install giflib-devel libjpeg-devel libtiff-devel
+</span><span class='line'>cd /usr/local/src
+</span><span class='line'>wget http://mirror.bjtu.edu.cn/gnu/emacs/emacs-24.4.tar.gz
+</span><span class='line'>tar xzvf emacs-24.4.tar.gz
+</span><span class='line'>cd emacs-24.4
+</span><span class='line'>./configure --without-all --with-x-toolkit=no --without-x
+</span><span class='line'>sudo make
+</span><span class='line'>sudo make install</span></code></pre></td></tr></table></div></figure>
 
 
-<p>sudo yum remove git
-yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel perl-ExtUtils-MakeMaker
-cd ~/Downloads
-wget <a href="https://www.kernel.org/pub/software/scm/git/git-2.5.1.tar.gz">https://www.kernel.org/pub/software/scm/git/git-2.5.1.tar.gz</a>
-tar -zxf git-2.5.1.tar.gz
-cd git-2.5.1
-sudo make
-sudo make install
-git &ndash;version</p>
+<h2>gitのバージョンアップ</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -280,30 +266,43 @@ git &ndash;version</p>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>していない？
-</span><span class='line'>
-</span><span class='line'>##vimのインストール
-</span><span class='line'>これに関しては、ほぼ教科書通りのことをしました。
-</span><span class='line'>vimは今までの過程で既に入っているようでしたので、neobundleの設定をして終了でした。
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>##その他
-</span><span class='line'>###tmuxのインストール</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yum remove git
+</span><span class='line'>yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel perl-ExtUtils-MakeMaker
+</span><span class='line'>cd ~/Downloads
+</span><span class='line'>wget https://www.kernel.org/pub/software/scm/git/git-2.5.1.tar.gz
+</span><span class='line'>tar -zxf git-2.5.1.tar.gz
+</span><span class='line'>cd git-2.5.1
+</span><span class='line'>sudo make
+</span><span class='line'>sudo make install
+</span><span class='line'>git --version</span></code></pre></td></tr></table></div></figure>
 
 
-<p>sudo yum install tmux</p>
+<p>していない？</p>
+
+<h2>vimのインストール</h2>
+
+<p>これに関しては、ほぼ教科書通りのことをしました。
+vimは今までの過程で既に入っているようでしたので、neobundleの設定をして終了でした。</p>
+
+<h2>その他</h2>
+
+<h3>tmuxのインストール</h3>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>###日本語環境のインストール</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yum install tmux</span></code></pre></td></tr></table></div></figure>
 
 
-<p>sudo yum -y groupinstall &ldquo;Japanese Support&rdquo;
-sudo yum -y install ibus-anthy
-sudo yum -y remove ibus-kkc
-sudo yum -y install ibus-kkc
-```</p>
+<h3>日本語環境のインストール</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yum -y groupinstall "Japanese Support"
+</span><span class='line'>sudo yum -y install ibus-anthy
+</span><span class='line'>sudo yum -y remove ibus-kkc
+</span><span class='line'>sudo yum -y install ibus-kkc</span></code></pre></td></tr></table></div></figure>
+
 
 <h1>参考文献</h1>
 

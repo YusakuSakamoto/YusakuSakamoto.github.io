@@ -161,14 +161,87 @@ yum repolist
 <p>ubuntuを使っている間は、keepass2をインストールするのが当たり前でしたが、今回はcentosで、しかも不慣れなyumなので、少しの違和感がありました。次のコマンドを実行<br/>
 <code>
 sudo yum install keepassx
-</code>
-初めて聞きますが、このコマンドで入りました。</p>
+</code></p>
+
+<p>初めて聞きますが、このコマンドで入りました。</p>
+
+<h2>dropboxのインストール</h2>
+
+<p>解説ページにしたがってコマンドを入力するだけで入ります。ありがとうございます。</p>
+
+<h2>gitのインストール</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yum install git
+</span><span class='line'>sudo yum install gitk</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>git-flowのインストール</h2>
+
+<p>これに関してはビビりまくっていましたが、yumで行けるんかい！となってしまいました。コマンドはこちら</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yum install -y gitflow</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>keepass2のインストール</h2>
+
+<p>keepassxですが、これでは.kdbxのファイルは扱えない、ということらしいので、入れなおしました。<br/>
+gitでkeepass2のインストーラーを起動します。<br/>
+この時にちょっとしたエラー<br/>
+monoについてのエラーのようですが、以下のコマンドで解決しました。<br/>
+install方法を示します。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yum install mono-core
+</span><span class='line'>sudo yum install mono-devel
+</span><span class='line'>cd ~/Downloads
+</span><span class='line'>git clone https://github.com/akmc/fedora_keepass_installer
+</span><span class='line'>cd fedora_keepass_installer
+</span><span class='line'>chmod u+x keepass.sh
+</span><span class='line'>./keepass.sh</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>build-essentialsをinstall</h2>
+
+<p>ubuntuでは簡単ですが、ccentosの場合は？</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo su
+</span><span class='line'>yum groupinstall "Development Tools"
+</span><span class='line'>yum install kernel-devel kernel-headers</span></code></pre></td></tr></table></div></figure>
+
+
+<p>yumのgroup-installを使えばいいようですね。存在は知っていましたが、初めて使いました。これによって、gccだのg++だのもすべてインストールしてくれるので、素晴らしく楽ですね。</p>
+
+<h2>emacs 24.4のインストール</h2>
+
+<pre><code> yum install gcc make ncurses-devel gtk3-devel
+ yum install giflib-devel libjpeg-devel libtiff-devel
+ cd /usr/local/src
+ wget http://mirror.bjtu.edu.cn/gnu/emacs/emacs-24.4.tar.gz
+ tar xzvf emacs-24.4.tar.gz
+ cd emacs-24.4
+ ./configure --without-all --with-x-toolkit=no --without-x
+ sudo make
+ sudo make install
+</code></pre>
 
 <h1>参考文献</h1>
 
 <ol>
 <li><a href="http://www.unix-power.net/linux/yum.html">UnixPower on Networking</a></li>
 <li><a href="http://oki2a24.com/2012/03/13/what-is-rpmforge-remi-epel/">repositoryの解説・入れ方</a></li>
+<li><a href="http://weblabo.oscasierra.net/installing-dropbox-on-redhat/">dropboxのinstall</a></li>
 </ol>
 
 </div>

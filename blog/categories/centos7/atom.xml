@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Centos7 | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/centos7/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-27T08:01:19+09:00</updated>
+  <updated>2015-10-27T09:31:29+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -85,14 +85,73 @@ repolist: 10,419
 <p>ubuntuを使っている間は、keepass2をインストールするのが当たり前でしたが、今回はcentosで、しかも不慣れなyumなので、少しの違和感がありました。次のコマンドを実行<br/>
 <code>
 sudo yum install keepassx
+</code></p>
+
+<p>初めて聞きますが、このコマンドで入りました。</p>
+
+<h2>dropboxのインストール</h2>
+
+<p>解説ページにしたがってコマンドを入力するだけで入ります。ありがとうございます。</p>
+
+<h2>gitのインストール</h2>
+
+<pre><code>sudo yum install git
+sudo yum install gitk
+</code></pre>
+
+<h2>git-flowのインストール</h2>
+
+<p>これに関してはビビりまくっていましたが、yumで行けるんかい！となってしまいました。コマンドはこちら
+<code>
+sudo yum install -y gitflow
+</code></p>
+
+<h2>keepass2のインストール</h2>
+
+<p>keepassxですが、これでは.kdbxのファイルは扱えない、ということらしいので、入れなおしました。<br/>
+gitでkeepass2のインストーラーを起動します。<br/>
+この時にちょっとしたエラー<br/>
+monoについてのエラーのようですが、以下のコマンドで解決しました。<br/>
+install方法を示します。<br/>
+<code>
+sudo yum install mono-core
+sudo yum install mono-devel
+cd ~/Downloads
+git clone https://github.com/akmc/fedora_keepass_installer
+cd fedora_keepass_installer
+chmod u+x keepass.sh
+./keepass.sh
+</code></p>
+
+<h2>build-essentialsをinstall</h2>
+
+<p>ubuntuでは簡単ですが、ccentosの場合は？
+<code>
+sudo su
+yum groupinstall "Development Tools"
+yum install kernel-devel kernel-headers
 </code>
-初めて聞きますが、このコマンドで入りました。</p>
+yumのgroup-installを使えばいいようですね。存在は知っていましたが、初めて使いました。これによって、gccだのg++だのもすべてインストールしてくれるので、素晴らしく楽ですね。</p>
+
+<h2>emacs 24.4のインストール</h2>
+
+<pre><code> yum install gcc make ncurses-devel gtk3-devel
+ yum install giflib-devel libjpeg-devel libtiff-devel
+ cd /usr/local/src
+ wget http://mirror.bjtu.edu.cn/gnu/emacs/emacs-24.4.tar.gz
+ tar xzvf emacs-24.4.tar.gz
+ cd emacs-24.4
+ ./configure --without-all --with-x-toolkit=no --without-x
+ sudo make
+ sudo make install
+</code></pre>
 
 <h1>参考文献</h1>
 
 <ol>
 <li><a href="http://www.unix-power.net/linux/yum.html">UnixPower on Networking</a></li>
 <li><a href="http://oki2a24.com/2012/03/13/what-is-rpmforge-remi-epel/">repositoryの解説・入れ方</a></li>
+<li><a href="http://weblabo.oscasierra.net/installing-dropbox-on-redhat/">dropboxのinstall</a></li>
 </ol>
 
 ]]></content>

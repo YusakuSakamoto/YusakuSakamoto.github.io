@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Centos7 | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/centos7/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-27T09:31:29+09:00</updated>
+  <updated>2015-10-27T17:41:32+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -80,6 +80,8 @@ repolist: 10,419
 
 <p>その他のレポジトリもそんなものなんでしょう。とりあえずいっぱい追加しても悪いことはない、ということですね。</p>
 
+<h1>各種インストール</h1>
+
 <h2>keepassxのインストール</h2>
 
 <p>ubuntuを使っている間は、keepass2をインストールするのが当たり前でしたが、今回はcentosで、しかも不慣れなyumなので、少しの違和感がありました。次のコマンドを実行<br/>
@@ -116,6 +118,7 @@ install方法を示します。<br/>
 <code>
 sudo yum install mono-core
 sudo yum install mono-devel
+sudo yum install mono-devel
 cd ~/Downloads
 git clone https://github.com/akmc/fedora_keepass_installer
 cd fedora_keepass_installer
@@ -135,7 +138,10 @@ yumのgroup-installを使えばいいようですね。存在は知っていま�
 
 <h2>emacs 24.4のインストール</h2>
 
-<pre><code> yum install gcc make ncurses-devel gtk3-devel
+<p>なんか気持ち悪い&hellip;.<br/>
+しかし入りました。
+<code>
+ yum install gcc make ncurses-devel gtk+ gtk3-devel.x86_64
  yum install giflib-devel libjpeg-devel libtiff-devel
  cd /usr/local/src
  wget http://mirror.bjtu.edu.cn/gnu/emacs/emacs-24.4.tar.gz
@@ -144,6 +150,41 @@ yumのgroup-installを使えばいいようですね。存在は知っていま�
  ./configure --without-all --with-x-toolkit=no --without-x
  sudo make
  sudo make install
+</code></p>
+
+<h2>gitのバージョンアップ</h2>
+
+<pre><code>sudo yum remove git
+yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel perl-ExtUtils-MakeMaker
+cd ~/Downloads
+wget https://www.kernel.org/pub/software/scm/git/git-2.5.1.tar.gz
+tar -zxf git-2.5.1.tar.gz
+cd git-2.5.1
+sudo make
+sudo make install
+git --version
+</code></pre>
+
+<p>していない？</p>
+
+<h2>vimのインストール</h2>
+
+<p>これに関しては、ほぼ教科書通りのことをしました。
+vimは今までの過程で既に入っているようでしたので、neobundleの設定をして終了でした。</p>
+
+<h2>その他</h2>
+
+<h3>tmuxのインストール</h3>
+
+<pre><code>sudo yum install tmux
+</code></pre>
+
+<h3>日本語環境のインストール</h3>
+
+<pre><code>sudo yum -y groupinstall "Japanese Support"
+sudo yum -y install ibus-anthy
+sudo yum -y remove ibus-kkc
+sudo yum -y install ibus-kkc
 </code></pre>
 
 <h1>参考文献</h1>
@@ -152,6 +193,7 @@ yumのgroup-installを使えばいいようですね。存在は知っていま�
 <li><a href="http://www.unix-power.net/linux/yum.html">UnixPower on Networking</a></li>
 <li><a href="http://oki2a24.com/2012/03/13/what-is-rpmforge-remi-epel/">repositoryの解説・入れ方</a></li>
 <li><a href="http://weblabo.oscasierra.net/installing-dropbox-on-redhat/">dropboxのinstall</a></li>
+<li><a href="http://www.sssg.org/blogs/hiro345/archives/17553.html">CentOS7の日本語入力にAnthyを使うには</a></li>
 </ol>
 
 ]]></content>

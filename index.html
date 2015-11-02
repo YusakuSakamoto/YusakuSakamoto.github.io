@@ -9,7 +9,23 @@
   <meta name="author" content="Yusaku Sakamoto">
 
   
-  <meta name="description" content="基本の知識 CentOSは、Red Hat系linuxであり、RHELの完全互換を目指した無料のlinux distributionである。 ROSでdistroという言葉が出てきていましたが、distro = distributionだそうです。もちろん、 &hellip;">
+  <meta name="description" content="環境を整える 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+mkdir blog
+git clone git@github.com:YusakuSakamoto/YusakuSakamoto.octopress.git
+cd YusakuSakamoto.octopress
+git &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +81,89 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/11/02/blog/">このブログについて</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-11-02T20:52:50+09:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2015</span></span> <span class='time'>8:52 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>環境を整える</h1>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir blog
+</span><span class='line'>git clone git@github.com:YusakuSakamoto/YusakuSakamoto.octopress.git
+</span><span class='line'>cd YusakuSakamoto.octopress
+</span><span class='line'>git clone git@github.com:YusakuSakamoto/YusakuSakamoto.github.io.git _deploy
+</span><span class='line'>sudo apt-get install rbenv
+</span><span class='line'>rbenv install 1.9.3-p0
+</span><span class='line'>rbenv local 1.9.3-p0
+</span><span class='line'>sudo apt-get install curl nodejs build-essensial
+</span><span class='line'>sudo apt-get install gem
+</span><span class='line'>gem install rails
+</span><span class='line'>gem install bundler
+</span><span class='line'>bundle install
+</span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>ブログの環境の整え方を再勉強してみた</h1>
+
+<ol>
+<li>rubyの基礎知識</li>
+<li>bundleとは</li>
+<li>gemとは</li>
+<li>nodejsとは</li>
+<li>curlとは</li>
+<li>rakeとは</li>
+<li>jekyllとは</li>
+</ol>
+
+
+<h1>rubyの基礎知識</h1>
+
+<p>octopressを使うには、ruby1.9.3の環境が必要、とありますので、インストールしなければなりませんが、aptでは入れることができません。そのため、</p>
+
+<p>のコマンドでインストールします。ここで<code>rbenv versions</code>のコマンドを打てば、バージョンを確認できます。これでrubyのインストールは終了です。</p>
+
+<h1>bundle</h1>
+
+<h2>bundleとは</h2>
+
+<p>英語で意味は「束」です。BundlerはRailsアプリケーションに必要となるGemパッケージの種類やバージョンを管理し、複数のPCで必要なGemパッケージをインストールする仕組みを提供してくれます。
+railsは、webアプリケーションを作るためのフレームワークです。<code>bundle install</code>は、Gemfileに指定されたものをインストールするものです。Gemfileにrakeやjekyllなども記述してあります。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -978,102 +1077,6 @@ wiringPi installの手順</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/10/19/passport09/">Passport09</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-10-19T03:12:09+09:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:12 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>ADSL</h4>
-
-<p>非対称ディジタル加入者線（Asymmetric Digital Subscriber Line）のことで、アナログ電話回線を使って、高速通信を実現した方式。数百kから数重Mビット毎秒程度の速度。アシンメトリック(Asymmetric)とは、非対称のことで、ダウンロードは大容量を非常に高速にできるのに対して、アップロードは少量で遅い通信しかできない。</p>
-
-<h4>Dos攻撃</h4>
-
-<p>Dos攻撃(Denial of Service attack:DoS)は、相手のサービスを妨害することを目的に、意味のない大量のデータを送りつけ、通信不能な状態にする攻撃。Denialとは、否定の意味を持つ。</p>
-
-<h4>DDoS</h4>
-
-<p>ゾンビコンピュータを利用した分散型で行う場合は、DDoS攻撃（ディードス攻撃）と呼ばれる。ゾンビコンピュータとは、ウイルス等によって、遠隔操作で悪用できる状態のコンピュータを指す。</p>
-
-<h4>ジフ(Graphics Interchange Format:GIF）</h4>
-
-<p>線画画像などのデータを圧縮して保存するための静止画のデータ形式。256色を扱い、JPEGと共にインターネットで標準的に使用される。</p>
-
-<h4>ADSL modem(モデム：変調復調装置)</h4>
-
-<p>変調・復調を行うことから<strong>mod</strong>ulator <strong>dem</strong>odulatorの頭文字を取って名付けられた。ADSL modemは、ADSLでアナログ通信を行うための専用のモデム。ノイズに弱いので、電話局から離れすぎると通信速度が遅くなる。</p>
-
-<h4>FTP(File Transfer Protocol)</h4>
-
-<p>ファイル転送プロトコルは、安全を考えた設計ではない。通常はTCP/IPのような通信で使用されていたが、現在はSSH FTP(SFTP)という手法で暗号化されたものを使用することがある。</p>
-
-<h4>DBMS(database management system)</h4>
-
-<p>主な機能<br/>
-- データベース言語。例えばSQLなど<br/>
-- 論理的データの独立性<br/>
-- データ完全性<br/>
-- トランザクション処理<br/>
-- セキュリティ<br/>
-- 障害復旧<br/>
-- 最適化<br/>
-- 分散データベース</p>
-
-<h4>DMZ</h4>
-
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Demilitarized_Zone_Diagram.png/220px-Demilitarized_Zone_Diagram.png" alt="DMZ" /><br/>
-DMZ(非武装地帯)とは、組織の内部ネットワークと危険の多い外部ネットワーク（一般的にインターネット）の間に設置されている隔離されたネットワーク領域（サブネットワーク、Subnetwork）のこと。コンピュータセキュリティの一技法として使われる。</p>
-
-<h4>HTTP</h4>
-
-<p>HTTPとは、Webサーバに格納されたHTMLファイルやその他メディアファイルを転送するプロトコル。</p>
-
-<h4>ISMS</h4>
-
-<p>PDCAのルーチンによってセキュリティを継続的に維持・向上させる仕組み。</p>
-
-<h4>IMAP(Internet Message Access Protocol)</h4>
-
-<p>メールの本体がサーバ上で管理される。そのため、ネット回線が接続状態でない場合にはアクセスできない。</p>
-
-<h4>HTTPS</h4>
-
-<p>HTTPSはHTTPに認証機能と暗号化機能を付け加えたものをいう。</p>
-
-<h4>バックアップ</h4>
-
-<ul>
-<li>差分バックアップ
-前回バックアップした状態と現在の状態で差分を取り、保存する</li>
-<li>増分バックアップ
-増分をバックアップしていく</li>
-<li>完全バックアップ
-初回バックアップ</li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -1089,6 +1092,10 @@ DMZ(非武装地帯)とは、組織の内部ネットワークと危険の多い
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/11/02/blog/">このブログについて</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/10/27/centos7-install/">CentOS7のインストール</a>
       </li>
     
@@ -1102,10 +1109,6 @@ DMZ(非武装地帯)とは、組織の内部ネットワークと危険の多い
     
       <li class="post">
         <a href="/blog/2015/10/23/raspi-pwm/">Raspi_pwm</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/10/23/tmux-momo/">Tmux使ってみました</a>
       </li>
     
   </ul>

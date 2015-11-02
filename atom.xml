@@ -4,7 +4,7 @@
   <title><![CDATA[活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-10-27T17:45:43+09:00</updated>
+  <updated>2015-11-03T07:26:45+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -12,6 +12,69 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[このブログについて]]></title>
+    <link href="http://yusakusakamoto.github.io/blog/2015/11/02/blog/"/>
+    <updated>2015-11-02T20:52:50+09:00</updated>
+    <id>http://yusakusakamoto.github.io/blog/2015/11/02/blog</id>
+    <content type="html"><![CDATA[<h1>環境を整える</h1>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir blog
+</span><span class='line'>git clone git@github.com:YusakuSakamoto/YusakuSakamoto.octopress.git
+</span><span class='line'>cd YusakuSakamoto.octopress
+</span><span class='line'>git clone git@github.com:YusakuSakamoto/YusakuSakamoto.github.io.git _deploy
+</span><span class='line'>sudo apt-get install rbenv
+</span><span class='line'>rbenv install 1.9.3-p0
+</span><span class='line'>rbenv local 1.9.3-p0
+</span><span class='line'>sudo apt-get install curl nodejs build-essensial
+</span><span class='line'>sudo apt-get install gem
+</span><span class='line'>gem install rails
+</span><span class='line'>gem install bundler
+</span><span class='line'>bundle install
+</span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>ブログの環境の整え方を再勉強してみた</h1>
+
+<ol>
+<li>rubyの基礎知識</li>
+<li>bundleとは</li>
+<li>gemとは</li>
+<li>nodejsとは</li>
+<li>curlとは</li>
+<li>rakeとは</li>
+<li>jekyllとは</li>
+</ol>
+
+
+<h1>rubyの基礎知識</h1>
+
+<p>octopressを使うには、ruby1.9.3の環境が必要、とありますので、インストールしなければなりませんが、aptでは入れることができません。そのため、</p>
+
+<p>のコマンドでインストールします。ここで<code>rbenv versions</code>のコマンドを打てば、バージョンを確認できます。これでrubyのインストールは終了です。</p>
+
+<h1>bundle</h1>
+
+<h2>bundleとは</h2>
+
+<p>英語で意味は「束」です。BundlerはRailsアプリケーションに必要となるGemパッケージの種類やバージョンを管理し、複数のPCで必要なGemパッケージをインストールする仕組みを提供してくれます。
+railsは、webアプリケーションを作るためのフレームワークです。<code>bundle install</code>は、Gemfileに指定されたものをインストールするものです。Gemfileにrakeやjekyllなども記述してあります。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[CentOS7のインストール]]></title>

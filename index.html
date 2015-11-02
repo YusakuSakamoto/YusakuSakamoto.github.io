@@ -9,23 +9,11 @@
   <meta name="author" content="Yusaku Sakamoto">
 
   
-  <meta name="description" content="環境を整える 1
+  <meta name="description" content="環境を整える for ubuntu haroopad(64bit)のインストール 1
 2
 3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-mkdir blog
-git clone git@github.com:YusakuSakamoto/YusakuSakamoto.octopress.git
-cd YusakuSakamoto.octopress
-git &hellip;">
+wget https://bitbucket.org/rhiokim/haroopad-download/downloads/haroopad-v0.12.2_amd64.deb
+sudo apt-get &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,6 +93,20 @@ git &hellip;">
 
   <div class="entry-content"><h1>環境を整える</h1>
 
+<h2>for ubuntu</h2>
+
+<h3>haroopad(64bit)のインストール</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget https://bitbucket.org/rhiokim/haroopad-download/downloads/haroopad-v0.12.2_amd64.deb
+</span><span class='line'>sudo apt-get -y install gdebi
+</span><span class='line'>sudo gdebi haroopad-v0.12.2_amd64.deb</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>octopress環境のインストール</h3>
+
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -125,13 +127,15 @@ git &hellip;">
 </span><span class='line'>sudo apt-get install rbenv
 </span><span class='line'>rbenv install 1.9.3-p0
 </span><span class='line'>rbenv local 1.9.3-p0
-</span><span class='line'>sudo apt-get install curl nodejs build-essensial
-</span><span class='line'>sudo apt-get install gem
+</span><span class='line'>sudo apt-get -y install curl nodejs build-essensial
+</span><span class='line'>sudo apt-get -y install gem
 </span><span class='line'>gem install rails
 </span><span class='line'>gem install bundler
 </span><span class='line'>bundle install
 </span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
 
+
+<h2>for centos</h2>
 
 <h1>ブログの環境の整え方を再勉強してみた</h1>
 

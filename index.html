@@ -7,9 +7,7 @@
 	<meta name="author" content="Yusaku Sakamoto">
 
 	
-	<meta name="description" content="NOOBSはOSのインストーラ
-raspbianをインストール
-Bittorrent upstartとsystemdの見分け方 各々、代表的なコマンドがあるかどうかで決めて良いと思います。以下、自分の環境で調べた結果をまとめます How To Confirm system command &hellip;">
+	<meta name="description" content="upstartとsystemdの見分け方 各々、代表的なコマンドがあるかどうかで決めて良いと思います。以下、自分の環境で調べた結果をまとめます How To Confirm system command sysVinit cat /etc/inittab upstart initctl &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -83,14 +81,10 @@ Bittorrent upstartとsystemdの見分け方 各々、代表的なコマンドが
 		
 		<a href="/blog/2015/11/07/systemd-upstart/">
 		
-			Systemd_upstart</a>
+			Initシステム</a>
 	</h2>
 	<div class="entry-content">
-		<p>NOOBSはOSのインストーラ
-raspbianをインストール
-Bittorrent</p>
-
-<h1>upstartとsystemdの見分け方</h1>
+		<h1>upstartとsystemdの見分け方</h1>
 
 <p>各々、代表的なコマンドがあるかどうかで決めて良いと思います。以下、自分の環境で調べた結果をまとめます</p>
 
@@ -160,11 +154,19 @@ Bittorrent</p>
 
 <h2>systemd</h2>
 
+<p>ubuntu14.10からsystemdの導入が決定し、CentOS7もsystemdに移行しているので、時代のトレンド的にSystemdが流行り出しているのかな、とか勝手に思っていますが、要するにsysVinitは依存関係上の処理が止まると全てのサービスの起動が停滞してしまう、という欠点があり、それが起動の遅延を引き起こしていましたが、systemdはサービスの起動を並列的に処理してくれるので結果的に起動が速くなります。</p>
+
+<p>注意ですが、<code>sysctl</code>コマンドはカーネルのパラメータを操作するときのコマンドであり、systemdのコマンドではありません。
+<a href="http://equj65.net/tech/systemd-boot/">Systemd関連記事</a><br/>
+<a href="http://alpha.mixi.co.jp/entry/2013/12063/">systemdを本番運用してわかったこと</a></p>
+
 <h2>upstart</h2>
 
-<p>rndcとは
-nslookupとは
-selinuxとは</p>
+<p>Upstartもsystemdと同じような働きをしており、過去多くのLinux distributionで利用されてきましたが、今はUpstartよりも多機能で膨大な働きができるSystemdの方が主流となっているようです。しかしながらUbuntu14.04LTSではUpstartが採用されていますので、現在のところどちらも使えるようになっておく必要があります(私の場合ですが)。</p>
+
+<h1>起動スクリプトの考え方は変わらない</h1>
+
+<p>起動スクリプトの考え方、つまりは、CentOS6における、<code>/etc/init.d/* start</code>みたいな使い方には変化しないようです。systemdではsystemctlを使用するか<code>service サービス名</code>という使い方をします。</p>
 
 		
 		
@@ -368,7 +370,33 @@ yum repolist
 
 <p>そんだけかい！</p>
 
-<p>その他のレポジトリもそんなものなんでしょう。とりあえずいっぱい追加しても悪いことはない、ということですね。</p>
+<p>  その他のレポジトリもそんなものなんでしょう。とりあえずいっぱい追加しても悪いことはない、ということですね。</p>
+
+<h2>repo追加(rpmforge,epel,elrepo,remi,IUS)</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/Downloads
+</span><span class='line'>rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt
+</span><span class='line'>rpm -ivh http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
+</span><span class='line'>rpm --import http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
+</span><span class='line'>rpm -ivh http://ftp-srv2.kddilabs.jp/Linux/packages/fedora/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+</span><span class='line'>rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+</span><span class='line'>rpm -ivh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
+</span><span class='line'>rpm --import http://rpms.famillecollet.com/RPM-GPG-KEY-remi
+</span><span class='line'>rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+</span><span class='line'>wget https://dl.iuscommunity.org/pub/ius/stable/CentOS/7/x86_64/ius-release-1.0-14.ius.centos7.noarch.rpm
+</span><span class='line'>rpm -Uvh ius-release-1.0-14.ius.centos7.noarch.rpm</span></code></pre></td></tr></table></div></figure>
+
 
 <h1>各種インストール</h1>
 
@@ -522,6 +550,10 @@ vimは今までの過程で既に入っているようでしたので、neobundl
 </span><span class='line'>chmod 755 postinst
 </span><span class='line'>sudo ./postinst</span></code></pre></td></tr></table></div></figure>
 
+
+<h2>VirtualBoxのインストール</h2>
+
+<p><a href="http://yoshiiz.blog129.fc2.com/blog-entry-825.html">CentOS 7 における VirtualBox のインストール手順</a></p>
 
 <h3>日本語環境のインストール</h3>
 

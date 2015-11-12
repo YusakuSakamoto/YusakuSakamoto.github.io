@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Passport | 活動日記]]></title>
+  <title><![CDATA[Category: passport | 活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/blog/categories/passport/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-11-03T08:16:03+09:00</updated>
+  <updated>2015-11-12T23:16:20+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Passport08]]></title>
+    <title type="html"><![CDATA[passport08]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/24/passport08/"/>
     <updated>2015-10-24T08:59:09+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/24/passport08</id>
@@ -79,7 +79,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Passport04]]></title>
+    <title type="html"><![CDATA[passport04]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/23/passport04/"/>
     <updated>2015-10-23T10:50:12+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/23/passport04</id>
@@ -119,7 +119,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Passport05]]></title>
+    <title type="html"><![CDATA[passport05]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/20/passport05/"/>
     <updated>2015-10-20T15:29:19+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/20/passport05</id>
@@ -186,7 +186,7 @@ WBSで作成された作業の単位(ワークパッケージ)に責任者と担
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Passport07]]></title>
+    <title type="html"><![CDATA[passport07]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/19/passport07/"/>
     <updated>2015-10-19T08:21:33+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/19/passport07</id>
@@ -259,7 +259,7 @@ WBSで作成された作業の単位(ワークパッケージ)に責任者と担
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Passport09]]></title>
+    <title type="html"><![CDATA[passport09]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/19/passport09/"/>
     <updated>2015-10-19T03:12:09+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/19/passport09</id>

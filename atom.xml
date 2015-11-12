@@ -4,7 +4,7 @@
   <title><![CDATA[活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-11-03T08:16:03+09:00</updated>
+  <updated>2015-11-12T23:16:20+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -47,7 +47,9 @@
 <span class='line-number'>11</span>
 <span class='line-number'>12</span>
 <span class='line-number'>13</span>
+<span class='line-number'>14</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>mkdir blog
+</span><span class='line'>cd blog
 </span><span class='line'>git clone git@github.com:YusakuSakamoto/YusakuSakamoto.octopress.git
 </span><span class='line'>cd YusakuSakamoto.octopress
 </span><span class='line'>git clone git@github.com:YusakuSakamoto/YusakuSakamoto.github.io.git _deploy
@@ -61,6 +63,8 @@
 </span><span class='line'>bundle install
 </span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
 
+
+<p>ubuntu14.04LTSでのインストールを確認しました。</p>
 
 <h2>for centos</h2>
 
@@ -302,6 +306,26 @@ vimは今までの過程で既に入っているようでしたので、neobundl
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo yum install tmux</span></code></pre></td></tr></table></div></figure>
 
 
+<h2>haroopadのインストール</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget https://bitbucket.org/rhiokim/haroopad-download/downloads/haroopad-v0.13.1-x64.tar.gz
+</span><span class='line'>tar -zxv haroopad-v0.13.1-x64.tar.gz
+</span><span class='line'>cd haroopad-v0.13.1-x64
+</span><span class='line'>tar -zxvf data.tar.gz
+</span><span class='line'>sudo cp ./usr/ / -rf
+</span><span class='line'>tar zxf control.tar.gz
+</span><span class='line'>chmod 755 postinst
+</span><span class='line'>sudo ./postinst</span></code></pre></td></tr></table></div></figure>
+
+
 <h3>日本語環境のインストール</h3>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -327,7 +351,7 @@ vimは今までの過程で既に入っているようでしたので、neobundl
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Passport08]]></title>
+    <title type="html"><![CDATA[passport08]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/24/passport08/"/>
     <updated>2015-10-24T08:59:09+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/24/passport08</id>
@@ -392,7 +416,7 @@ vimは今までの過程で既に入っているようでしたので、neobundl
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Passport04]]></title>
+    <title type="html"><![CDATA[passport04]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/23/passport04/"/>
     <updated>2015-10-23T10:50:12+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/23/passport04</id>
@@ -432,7 +456,7 @@ vimは今までの過程で既に入っているようでしたので、neobundl
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Raspi_pwm]]></title>
+    <title type="html"><![CDATA[raspi_pwm]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/23/raspi-pwm/"/>
     <updated>2015-10-23T10:38:10+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/23/raspi-pwm</id>
@@ -446,7 +470,7 @@ vimは今までの過程で既に入っているようでしたので、neobundl
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Tmux使ってみました]]></title>
+    <title type="html"><![CDATA[tmux使ってみました]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/23/tmux-momo/"/>
     <updated>2015-10-23T07:05:20+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/23/tmux-momo</id>
@@ -635,7 +659,7 @@ p型半導体（ピーがたはんどうたい）とは、電荷を運ぶキャ�
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Passport05]]></title>
+    <title type="html"><![CDATA[passport05]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/20/passport05/"/>
     <updated>2015-10-20T15:29:19+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/20/passport05</id>
@@ -702,7 +726,7 @@ WBSで作成された作業の単位(ワークパッケージ)に責任者と担
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Raspi1]]></title>
+    <title type="html"><![CDATA[raspi1]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/19/raspi1/"/>
     <updated>2015-10-19T08:23:13+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/19/raspi1</id>
@@ -752,7 +776,7 @@ wiringPi installの手順</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Passport07]]></title>
+    <title type="html"><![CDATA[passport07]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/19/passport07/"/>
     <updated>2015-10-19T08:21:33+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/19/passport07</id>
@@ -825,7 +849,7 @@ wiringPi installの手順</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Passport09]]></title>
+    <title type="html"><![CDATA[passport09]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/19/passport09/"/>
     <updated>2015-10-19T03:12:09+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/19/passport09</id>
@@ -901,7 +925,7 @@ DMZ(非武装地帯)とは、組織の内部ネットワークと危険の多い
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Passport03]]></title>
+    <title type="html"><![CDATA[passport03]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/13/passport3/"/>
     <updated>2015-10-13T15:44:01+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/13/passport3</id>
@@ -947,7 +971,7 @@ slack,trello,googleカレンダー,gmailなど<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Vim1]]></title>
+    <title type="html"><![CDATA[vim1]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/13/vimguan-lian-1/"/>
     <updated>2015-10-13T08:04:13+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/13/vimguan-lian-1</id>
@@ -1004,7 +1028,7 @@ slack,trello,googleカレンダー,gmailなど<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Transistor]]></title>
+    <title type="html"><![CDATA[transistor]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/10/transistor/"/>
     <updated>2015-10-10T00:00:26+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/10/transistor</id>
@@ -1066,7 +1090,7 @@ MOSFETの場合、ゲート端子が浮いていることになる。</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Ubuntu_setup]]></title>
+    <title type="html"><![CDATA[ubuntu_setup]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/09/ubuntu-setup/"/>
     <updated>2015-10-09T18:46:34+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/09/ubuntu-setup</id>
@@ -1163,7 +1187,7 @@ raspberry pi の使用を勧め、決定しました。</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Passport02]]></title>
+    <title type="html"><![CDATA[passport02]]></title>
     <link href="http://yusakusakamoto.github.io/blog/2015/10/09/passport/"/>
     <updated>2015-10-09T00:16:10+09:00</updated>
     <id>http://yusakusakamoto.github.io/blog/2015/10/09/passport</id>

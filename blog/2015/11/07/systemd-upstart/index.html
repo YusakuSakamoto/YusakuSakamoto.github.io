@@ -1,0 +1,209 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>systemd_upstart - 活動日記</title>
+	<meta name="author" content="Yusaku Sakamoto">
+
+	
+	<meta name="description" content="NOOBSはOSのインストーラ
+raspbianをインストール
+Bittorrent upstartとsystemdの見分け方 各々、代表的なコマンドがあるかどうかで決めて良いと思います。以下、自分の環境で調べた結果をまとめます How To Confirm system command &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="活動日記" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script async="true" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+</head>
+
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">活動日記</a></h1>
+<nav id="main-nav"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="https://www.google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:yusakusakamoto.github.io">
+			</form>
+		</div>
+	</div>
+</nav>
+<nav id="sub-nav" class="alignright">
+	<div class="social">
+		
+		
+		
+		
+    
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+    
+	</div>
+	<form class="search" action="https://www.google.com/search" method="get">
+		<input class="alignright" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="site:yusakusakamoto.github.io">
+	</form>
+</nav>
+
+</header>
+	
+		
+	
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">Systemd_upstart</h2>
+	<div class="entry-content"><p>NOOBSはOSのインストーラ
+raspbianをインストール
+Bittorrent</p>
+
+<h1>upstartとsystemdの見分け方</h1>
+
+<p>各々、代表的なコマンドがあるかどうかで決めて良いと思います。以下、自分の環境で調べた結果をまとめます</p>
+
+<h3>How To Confirm</h3>
+
+<table>
+<thead>
+<tr>
+<th> system   </th>
+<th> command          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> sysVinit </td>
+<td> cat /etc/inittab </td>
+</tr>
+<tr>
+<td> upstart  </td>
+<td> initctl          </td>
+</tr>
+<tr>
+<td> systemd  </td>
+<td> systemctl        </td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>Confirmed List</h3>
+
+<table>
+<thead>
+<tr>
+<th>distribution</th>
+<th>system  </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ubuntu14,04 </td>
+<td>upstart </td>
+</tr>
+<tr>
+<td>ubuntu15.04 </td>
+<td>systemd </td>
+</tr>
+<tr>
+<td>raspbian    </td>
+<td>sysVinit</td>
+</tr>
+<tr>
+<td>CentOS6.2   </td>
+<td>upstart </td>
+</tr>
+<tr>
+<td>CentOS6.7   </td>
+<td>upstart </td>
+</tr>
+<tr>
+<td>CentOS7.1   </td>
+<td>systemd </td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>systemd</h2>
+
+<h2>upstart</h2>
+
+<p>rndcとは
+nslookupとは
+selinuxとは</p>
+</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+Nov 7th, 2015</div>
+	<div class="tags">
+
+</div>
+	
+</div>
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+		
+		
+		<a class="addthis_button_tweet"></a>
+		
+		
+		
+	</div>
+	
+</div>
+
+
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Yusaku Sakamoto
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+
+</body>
+</html>

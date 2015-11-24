@@ -200,14 +200,38 @@ Nov 7th, 2015</div>
 
 <h2>for ubuntu</h2>
 
+<p>下のインストールは、ubuntu14.04用</p>
+
 <h3>haroopad(64bit)のインストール</h3>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>wget https://bitbucket.org/rhiokim/haroopad-download/downloads/haroopad-v0.12.2_amd64.deb
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget https://bitbucket.org/rhiokim/haroopad-download/downloads/haroopad-v0.13.1_amd64.deb
 </span><span class='line'>sudo apt-get -y install gdebi
-</span><span class='line'>sudo gdebi haroopad-v0.12.2_amd64.deb</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>sudo gdebi haroopad-v0.13.1_amd64.deb</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>rbenvのインストール</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get upgrade
+</span><span class='line'>cd ~
+</span><span class='line'>sudo apt-get install git build-essential libssl-dev
+</span><span class='line'>git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+</span><span class='line'>git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+</span><span class='line'>echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.bashrc
+</span><span class='line'>echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.bashrc
+</span><span class='line'>source ~/.bashrc</span></code></pre></td></tr></table></div></figure>
 
 
 <h3>octopress環境のインストール</h3>

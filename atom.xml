@@ -4,7 +4,7 @@
   <title><![CDATA[活動日記]]></title>
   <link href="http://yusakusakamoto.github.io/atom.xml" rel="self"/>
   <link href="http://yusakusakamoto.github.io/"/>
-  <updated>2015-11-13T04:40:16+09:00</updated>
+  <updated>2015-11-24T20:55:33+09:00</updated>
   <id>http://yusakusakamoto.github.io/</id>
   <author>
     <name><![CDATA[Yusaku Sakamoto]]></name>
@@ -113,14 +113,38 @@
 
 <h2>for ubuntu</h2>
 
+<p>下のインストールは、ubuntu14.04用</p>
+
 <h3>haroopad(64bit)のインストール</h3>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>wget https://bitbucket.org/rhiokim/haroopad-download/downloads/haroopad-v0.12.2_amd64.deb
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget https://bitbucket.org/rhiokim/haroopad-download/downloads/haroopad-v0.13.1_amd64.deb
 </span><span class='line'>sudo apt-get -y install gdebi
-</span><span class='line'>sudo gdebi haroopad-v0.12.2_amd64.deb</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>sudo gdebi haroopad-v0.13.1_amd64.deb</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>rbenvのインストール</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get upgrade
+</span><span class='line'>cd ~
+</span><span class='line'>sudo apt-get install git build-essential libssl-dev
+</span><span class='line'>git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+</span><span class='line'>git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+</span><span class='line'>echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.bashrc
+</span><span class='line'>echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.bashrc
+</span><span class='line'>source ~/.bashrc</span></code></pre></td></tr></table></div></figure>
 
 
 <h3>octopress環境のインストール</h3>
@@ -1521,27 +1545,6 @@ Wikiより<br/>
 <hr />
 
 <h2>2.CIR-KITの先輩方の紹介</h2>
-
-<ul>
-<li><a href="http://github.com/AriYu">有田先輩</a></li>
-<li><a href="http://github.com/RyodoTanaka">田中先輩</a></li>
-<li><a href="http://github.com/MatsunoTakuya">松尾先輩</a></li>
-<li><a href="http://github.com/Ry0">株丹先輩</a></li>
-<li><a href="http://github.com/Ayuge-san">鮎川先輩</a></li>
-<li>川島先輩</li>
-</ul>
-
-
-<hr />
-
-<ul>
-<li>私こと<a href="http://github.com/YusakuSakamoto">坂本</a></li>
-<li><a href="https://github.com/shimoe">下松八重</a></li>
-<li><a href="https://github.com/YamaCIR-KIT">山崎</a></li>
-<li><a href="https://github.com/Dsaikoro">中野</a></li>
-<li><a href="https://github.com/forno">土井</a></li>
-</ul>
-
 
 <h2>3.<a href="http://www.wolframalpha.com/">Wolfram alfa</a>の紹介</h2>
 
